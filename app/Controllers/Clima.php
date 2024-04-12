@@ -14,7 +14,13 @@ class Clima extends BaseController
 
     public function getUbicaciones(){
         $model = model('ClimaModel');
-        $ubicaciones = $model->select('ubicacion')->groupBy('ubicacion')->findAll();
-        print_r($ubicaciones);
+        $data['datos'] = $model->getUbicaciones();
+        return view ('datos',$data);
+    }
+
+    public function getClimaByCP(){
+        $model = model('ClimaModel');
+        $data['datos'] = $model->getClimaByCP();
+        return view('datos',$data);
     }
 }

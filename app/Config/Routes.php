@@ -10,4 +10,5 @@ $routes->get('/', 'Home::index');
 
 $routes->get('/documentacion', 'Clima::index');
 $routes->get('/documentacion/getUbicaciones', 'Clima::getUbicaciones');
+$routes->get('/documentacion/getClimaByCP', 'Clima::getClimaByCP');
 
