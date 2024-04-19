@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
+use CodeIgniter\HTTP\Response;
+use CodeIgniter\API\ResponseTrait;
 
 class Clima extends BaseController
 {
@@ -12,83 +14,187 @@ class Clima extends BaseController
         return view('documentacion');
     }
 
-    public function getUbicaciones(){
-        $model = model('ClimaModel');
-        $data['datos'] = $model->getUbicaciones();
-        return view ('datos',$data);
+    public function getUbicaciones()
+    {
+        $data['datos'] = model('ClimaModel')->getUbicaciones();
+        
+        $response = response();
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setBody(json_encode($data));
+        $response->setHeader('Content-Type', 'text/html');
+        $response->noCache();
+
+        $response->send();
     }
 
-    public function getClimaByCP(){
+
+    public function getClimaByCP()
+    {
         $model = model('ClimaModel');
         $data['datos'] = $model->getClimaByCP();
-        return view('datos',$data);
+
+        $response = response();
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setBody(json_encode($data));
+        $response->setHeader('Content-Type', 'text/html');
+        $response->noCache();
+
+        $response->send();
     }
 
-    public function getClimaByFechas(){
+    public function getClimaByFechas()
+    {
         $model = model('ClimaModel');
         $data['datos'] = $model->getClimaByFechas();
-        return view('datos',$data);
+
+        $response = response();
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setBody(json_encode($data));
+        $response->setHeader('Content-Type', 'text/html');
+        $response->noCache();
+
+        $response->send();
     }
 
-    public function getClimaByUbicacion(){
+    public function getClimaByUbicacion()
+    {
         $model = model('ClimaModel');
         $data['datos'] = $model->getClimaByUbicacion();
-        return view('datos',$data);
-    }
-    
 
-    public function getClimaByUbicacionDia(){
+        $response = response();
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setBody(json_encode($data));
+        $response->setHeader('Content-Type', 'text/html');
+        $response->noCache();
+
+        $response->send();
+    }
+
+
+    public function getClimaByUbicacionDia()
+    {
         $model = model('ClimaModel');
         $data['datos'] = $model->getClimaByUbicacionDia();
-        return view('datos',$data);
+
+        $response = response();
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setBody(json_encode($data));
+        $response->setHeader('Content-Type', 'text/html');
+        $response->noCache();
+
+        $response->send();
     }
 
-    public function getClimaByUbicacionHora(){
+    public function getClimaByUbicacionHora()
+    {
         $model = model('ClimaModel');
         $data['datos'] = $model->getClimaByUbicacionHora();
-        return view('datos',$data);
+
+        $response = response();
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setBody(json_encode($data));
+        $response->setHeader('Content-Type', 'text/html');
+        $response->noCache();
+
+        $response->send();
     }
 
-    public function getClimaByTemperatura(){
+    public function getClimaByTemperatura()
+    {
         $model = model('ClimaModel');
         $data['datos'] = $model->getClimaByTemperatura();
-        return view('datos',$data);
+
+        $response = response();
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setBody(json_encode($data));
+        $response->setHeader('Content-Type', 'text/html');
+        $response->noCache();
+
+        $response->send();
     }
 
-    public function getClimaByTemperaturaSensacionTermica(){
+    public function getClimaByTemperaturaSensacionTermica()
+    {
         $model = model('ClimaModel');
         $data['datos'] = $model->getClimaByTemperaturaSensacionTermica();
-        return view('datos',$data);
+
+        $response = response();
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setBody(json_encode($data));
+        $response->setHeader('Content-Type', 'text/html');
+        $response->noCache();
+
+        $response->send();
     }
 
-    public function getClimaByTipoClima(){
+    public function getClimaByTipoClima()
+    {
         $model = model('ClimaModel');
         $data['datos'] = $model->getClimaByTipoClima();
-        return view('datos',$data);
+
+        $response = response();
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setBody(json_encode($data));
+        $response->setHeader('Content-Type', 'text/html');
+        $response->noCache();
+
+        $response->send();
     }
 
-    public function getClimaByTipoClimaUbicacion(){
+    public function getClimaByTipoClimaUbicacion()
+    {
         $model = model('ClimaModel');
         $data['datos'] = $model->getClimaByTipoClimaUbicacion();
-        return view('datos',$data);
+
+        $response = response();
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setBody(json_encode($data));
+        $response->setHeader('Content-Type', 'text/html');
+        $response->noCache();
+
+        $response->send();
     }
 
-    public function getClimaByTipoClimaUbicacionTemperatura(){
+    public function getClimaByTipoClimaUbicacionTemperatura()
+    {
         $model = model('ClimaModel');
         $data['datos'] = $model->getClimaByTipoClimaUbicacionTemperatura();
-        return view('datos',$data);
+
+        $response = response();
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setBody(json_encode($data));
+        $response->setHeader('Content-Type', 'text/html');
+        $response->noCache();
+
+        $response->send();
     }
 
-    public function getClimaByTipoClimaAltitudHora(){
+    public function getClimaByTipoClimaAltitudHora()
+    {
         $model = model('ClimaModel');
         $data['datos'] = $model->getClimaByTipoClimaAltitudHora();
-        return view('datos',$data);
+
+        $response = response();
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setBody(json_encode($data));
+        $response->setHeader('Content-Type', 'text/html');
+        $response->noCache();
+
+        $response->send();
     }
 
-    public function getClimaByHumedadSensacionTermica(){
+    public function getClimaByHumedadSensacionTermica()
+    {
         $model = model('ClimaModel');
         $data['datos'] = $model->getClimaByHumedadSensacionTermica();
-        return view('datos',$data);
+
+        $response = response();
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setBody(json_encode($data));
+        $response->setHeader('Content-Type', 'text/html');
+        $response->noCache();
+
+        $response->send();
     }
-    
+
 }
