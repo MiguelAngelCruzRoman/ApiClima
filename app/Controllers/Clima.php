@@ -9,11 +9,6 @@ use CodeIgniter\API\ResponseTrait;
 
 class Clima extends BaseController
 {
-    public function index()
-    {
-        return view('documentacion');
-    }
-
     public function getUbicaciones()
     {
         $data['datos'] = model('ClimaModel')->getUbicaciones();

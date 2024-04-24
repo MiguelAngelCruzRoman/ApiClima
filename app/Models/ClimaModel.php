@@ -16,7 +16,6 @@ class ClimaModel extends Model
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
-
     protected array $casts = [];
     protected array $castHandlers = [];
 
@@ -121,7 +120,7 @@ class ClimaModel extends Model
         $sensacionTermicaMinima = $request->getGet('sensacionTermicaMinima');
 
         $db = db_connect();
-        $sql = $db->table('clima')->select('ubicacion, latitud, longitud, altitud, fecha, hora')->where('sensacionTermica>=',$sensacionTermicaMinima)->where('temperatura>=',$temperaturaMinima);
+        $sql = $db->table('clima')->select('temperatura,ubicacion, latitud, longitud, altitud, fecha, hora')->where('sensacionTermica>=',$sensacionTermicaMinima)->where('temperatura>=',$temperaturaMinima);
         $query = $sql->get();
         return $query->getResult();
     }

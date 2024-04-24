@@ -3,15 +3,23 @@
 
 use CodeIgniter\Router\RouteCollection;
 
-/**
- * @var RouteCollection $routes
- */
+
 $routes->get('/', 'Home::index');
 
-$routes->get('/documentacion', 'Clima::index');
+$routes->get('/documentacion', 'VistasController::documentacion');
 $routes->get('/documentacion/getUbicaciones', 'Clima::getUbicaciones');
 $routes->get('/documentacion/getClimaByCP', 'Clima::getClimaByCP');
 $routes->get('/documentacion/getClimaByFechas', 'Clima::getClimaByFechas');
+
+$routes->get('/query1', 'VistasController::query1');
+$routes->get('/query2', 'VistasController::query2');
+$routes->get('/query3', 'VistasController::query3');
+$routes->get('/query4', 'VistasController::query4');
+$routes->get('/query5', 'VistasController::query5');
+$routes->get('/query6', 'VistasController::query6');
+$routes->get('/query7', 'VistasController::query7');
+$routes->get('/query8', 'VistasController::query8');
+$routes->get('/query9', 'VistasController::query9');
 
 $routes->get('/documentacion/getClimaByUbicacion', 'Clima::getClimaByUbicacion');
 //http://localhost:8080/documentacion/getClimaByUbicacion?ubicacion=San%20V%C3%ADctor%20de%20la%20Monta%C3%B1a
@@ -33,4 +41,3 @@ $routes->get('/documentacion/getClimaByTipoClimaAltitudHora', 'Clima::getClimaBy
 //http://localhost:8080/documentacion/getClimaByTipoClimaAltitudHora?tipoClima=Soleado&altitudMinima=1000&altitudMaxima=1200&horaInicio=08:00:00&horaFin=20:00:00
 $routes->get('/documentacion/getClimaByHumedadSensacionTermica', 'Clima::getClimaByHumedadSensacionTermica');
 //http://localhost:8080/documentacion/getClimaByHumedadSensacionTermica?humedadMinima=10&humedadMaxima=20&sensacionTermicaMinima=10&sensacionTermicaMaxima=20
-

@@ -1,0 +1,27 @@
+CRITICAL - 2024-04-24 15:32:52 --> Invalid file: "Query/query1.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Query/query1.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Query/query1', [], true)
+ 3 APPPATH\Controllers\VistasController.php(17): view('Query/query1')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\VistasController->query1()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VistasController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\ApiClima\\public\\index.php')
+CRITICAL - 2024-04-24 15:47:06 --> Invalid file: "Query/quer3.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Query/quer3.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Query/quer3', [], true)
+ 3 APPPATH\Controllers\VistasController.php(25): view('Query/quer3')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\VistasController->query3()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VistasController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\ApiClima\\public\\index.php')
+CRITICAL - 2024-04-24 16:15:55 --> syntax error, unexpected identifier "alternativa"
+in APPPATH\Config\Routes.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\ApiClima\\public\\index.php')
