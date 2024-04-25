@@ -12,14 +12,14 @@
     <div id="app">
         <h1>Ubicaciones</h1>
         <ul>
-            <li v-for="(clima, index) in climas" :key="index">{{clima.temperatura}}</li>
+        <li v-for="(clima, index) in climas" :key="index">A una altitud de {{clima.altitud}} m se registró {{clima.temperatura}} °C</li>
         </ul>
     </div>
-    <script>.
+    <script>
         new Vue({
             el: '#app',
             data: {
-                climas[]
+                climas: []
             },
             mounted() {
                 this.fetchData();
@@ -27,7 +27,7 @@
             methods: {
                 async fetchData() {
                     try {
-                        const response = await fetch('http://localhost:8080/documentacion/getClimaByTipoClimaUbicacionTemperatura?tipoClima=Seco&ubicacion=Vieja%20Croacia&&temperaturaMinima=0');
+                        const response = await fetch('http://localhost:8080/documentacion/getClimaByTipoClimaUbicacion?tipoClima=Nublado&ubicacion=San%20V%C3%ADctor%20de%20la%20Monta%C3%B1a');
                         const data = await response.json();
                         this.climas = data.datos;
                     } catch (error) {
@@ -35,8 +35,7 @@
                     }
                 }
             }
-        }
-        );  
+        });
     </script>
 </body>
 

@@ -52,7 +52,7 @@ class ClimaModel extends Model
 
     public function getClimaByCP(){
         $request = request();
-        $cp = $request->getGet('cp'); //Con esto se accede a variables con get/post
+        $cp = $request->getGet('cp'); 
 
         $db = db_connect();
         $sql = $db->table('clima')->select('latitud, longitud, fecha, hora, temperatura')->where('CP',$cp);

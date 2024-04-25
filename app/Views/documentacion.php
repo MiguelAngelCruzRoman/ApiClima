@@ -15,11 +15,11 @@
             <li v-for="(ubicacion, index) in ubicaciones" :key="index">{{ubicacion.ubicacion}}</li>
         </ul>
     </div>
-    <script>.
+    <script>
         new Vue({
             el: '#app',
             data: {
-                ubicaciones[]
+                ubicaciones: [] // Corrección aquí
             },
             mounted() {
                 this.fetchData();
@@ -34,10 +34,11 @@
                         console.error('Error al recuperar los datos', error);
                     }
                 }
+
             }
-        }
-    );  
+        });  
     </script>
+
 </body>
 
 </html>

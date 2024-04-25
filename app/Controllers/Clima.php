@@ -8,19 +8,20 @@ use CodeIgniter\HTTP\Response;
 use CodeIgniter\API\ResponseTrait;
 
 class Clima extends BaseController
-{
+{   
     public function getUbicaciones()
-    {
-        $data['datos'] = model('ClimaModel')->getUbicaciones();
-        
-        $response = response();
-        $response->setStatusCode(Response::HTTP_OK);
-        $response->setBody(json_encode($data));
-        $response->setHeader('Content-Type', 'text/html');
-        $response->noCache();
+{
+    $data['datos'] = model('ClimaModel')->getUbicaciones();
+    
+    $response = response();
+    $response->setStatusCode(Response::HTTP_OK);
+    $response->setBody(json_encode($data));
+    $response->setHeader('Content-Type', 'application/json');
+    $response->noCache();
 
-        $response->send();
-    }
+    $response->send();
+}
+
 
 
     public function getClimaByCP()
@@ -31,7 +32,7 @@ class Clima extends BaseController
         $response = response();
         $response->setStatusCode(Response::HTTP_OK);
         $response->setBody(json_encode($data));
-        $response->setHeader('Content-Type', 'text/html');
+        $response->setHeader('Content-Type', 'application/json');
         $response->noCache();
 
         $response->send();
@@ -45,7 +46,7 @@ class Clima extends BaseController
         $response = response();
         $response->setStatusCode(Response::HTTP_OK);
         $response->setBody(json_encode($data));
-        $response->setHeader('Content-Type', 'text/html');
+        $response->setHeader('Content-Type', 'application/json');
         $response->noCache();
 
         $response->send();
@@ -59,7 +60,7 @@ class Clima extends BaseController
         $response = response();
         $response->setStatusCode(Response::HTTP_OK);
         $response->setBody(json_encode($data));
-        $response->setHeader('Content-Type', 'text/html');
+        $response->setHeader('Content-Type', 'application/json');
         $response->noCache();
 
         $response->send();
@@ -74,7 +75,7 @@ class Clima extends BaseController
         $response = response();
         $response->setStatusCode(Response::HTTP_OK);
         $response->setBody(json_encode($data));
-        $response->setHeader('Content-Type', 'text/html');
+        $response->setHeader('Content-Type', 'application/json');
         $response->noCache();
 
         $response->send();
@@ -88,7 +89,7 @@ class Clima extends BaseController
         $response = response();
         $response->setStatusCode(Response::HTTP_OK);
         $response->setBody(json_encode($data));
-        $response->setHeader('Content-Type', 'text/html');
+        $response->setHeader('Content-Type', 'application/json');
         $response->noCache();
 
         $response->send();
@@ -102,7 +103,7 @@ class Clima extends BaseController
         $response = response();
         $response->setStatusCode(Response::HTTP_OK);
         $response->setBody(json_encode($data));
-        $response->setHeader('Content-Type', 'text/html');
+        $response->setHeader('Content-Type', 'application/json');
         $response->noCache();
 
         $response->send();
@@ -116,7 +117,7 @@ class Clima extends BaseController
         $response = response();
         $response->setStatusCode(Response::HTTP_OK);
         $response->setBody(json_encode($data));
-        $response->setHeader('Content-Type', 'text/html');
+        $response->setHeader('Content-Type', 'application/json');
         $response->noCache();
 
         $response->send();
@@ -130,7 +131,7 @@ class Clima extends BaseController
         $response = response();
         $response->setStatusCode(Response::HTTP_OK);
         $response->setBody(json_encode($data));
-        $response->setHeader('Content-Type', 'text/html');
+        $response->setHeader('Content-Type', 'application/json');
         $response->noCache();
 
         $response->send();
@@ -144,7 +145,7 @@ class Clima extends BaseController
         $response = response();
         $response->setStatusCode(Response::HTTP_OK);
         $response->setBody(json_encode($data));
-        $response->setHeader('Content-Type', 'text/html');
+        $response->setHeader('Content-Type', 'application/json');
         $response->noCache();
 
         $response->send();
@@ -158,7 +159,7 @@ class Clima extends BaseController
         $response = response();
         $response->setStatusCode(Response::HTTP_OK);
         $response->setBody(json_encode($data));
-        $response->setHeader('Content-Type', 'text/html');
+        $response->setHeader('Content-Type', 'application/json');
         $response->noCache();
 
         $response->send();
@@ -172,7 +173,7 @@ class Clima extends BaseController
         $response = response();
         $response->setStatusCode(Response::HTTP_OK);
         $response->setBody(json_encode($data));
-        $response->setHeader('Content-Type', 'text/html');
+        $response->setHeader('Content-Type', 'application/json');
         $response->noCache();
 
         $response->send();
@@ -186,7 +187,7 @@ class Clima extends BaseController
         $response = response();
         $response->setStatusCode(Response::HTTP_OK);
         $response->setBody(json_encode($data));
-        $response->setHeader('Content-Type', 'text/html');
+        $response->setHeader('Content-Type', 'application/json');
         $response->noCache();
 
         $response->send();

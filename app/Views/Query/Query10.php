@@ -27,7 +27,7 @@
             methods: {
                 async fetchData() {
                     try {
-                        const response = await fetch('http://localhost:8080/documentacion/getClimaByTemperaturaSensacionTermica?sensacionTermicaMinima=20&temperaturaMinima=13');
+                        const response = await fetch('http://localhost:8080/documentacion/getClimaByHumedadSensacionTermica?humedadMinima=10&humedadMaxima=20&sensacionTermicaMinima=10&sensacionTermicaMaxima=20');
                         const data = await response.json();
                         this.climas = data.datos;
                     } catch (error) {
@@ -35,7 +35,8 @@
                     }
                 }
             }
-        });  
+        }
+    );  
     </script>
 </body>
 
