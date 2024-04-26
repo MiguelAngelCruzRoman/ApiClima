@@ -11,4 +11,9 @@ class VueController extends BaseController
         return view ('VueForm/prueba');
     }
 
+    public function ejemploProfe()
+    {
+        return view ('VueForm/ejemploProfe');
+    }
+
 }

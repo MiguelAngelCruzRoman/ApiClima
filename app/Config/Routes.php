@@ -64,4 +64,5 @@ $routes->get('/query10', 'VistasController::query10');
 
 
 ///Rutas para formularios vue
+$routes->get('/ejemploProfe', 'VueController::ejemploProfe');
 $routes->get('/formVuePrueba', 'VueController::formPrueba');
