@@ -21,4 +21,9 @@ class HotelesModel extends Model
         return $hoteles->toArray();
     }
 
+    public function getByCiudad($ciudad)
+    {
+        $hoteles = $this->collection->find( ['ubicación.ciudad' => $ciudad] );
+        return $hoteles->toArray();
+    }
 }

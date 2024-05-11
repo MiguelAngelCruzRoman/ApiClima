@@ -27,7 +27,7 @@
             },
             methods: {
                 fetchHabitaciones() {
-                    axios.get('https://e4ac-2806-10a6-f-92a3-42d-8d90-2cef-28b8.ngrok-free.app/habitaciones')
+                    axios.get('https://sailfish-master-goose.ngrok-free.app/habitaciones')
                         .then(response => {
                             this.habitaciones = response.data;
                         })

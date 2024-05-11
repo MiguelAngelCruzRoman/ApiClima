@@ -23,4 +23,15 @@ class Habitaciones extends BaseController
     public function documentacionIndex(){
         return view('habitaciones/index'); 
     }
+
+    public function getByPrecio($precio)
+    {
+        $habitaciones = new HabitacionesModel();
+        $allHabitaciones = $habitaciones->getByPrecio($precio);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allHabitaciones);
+        return $response;
+    }
 }

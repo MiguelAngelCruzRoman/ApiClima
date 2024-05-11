@@ -3,12 +3,13 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use DateTime;
 use MongoDB\Client as MongoDBClient;
 
 class ReservacionesModel extends Model
 {
     protected $collection;
-    
+
     public function __construct()
     {
         parent::__construct();
@@ -21,4 +22,9 @@ class ReservacionesModel extends Model
         return $reservaciones->toArray();
     }
 
+    public function getByEstatus($estatus)
+    {
+        $reservaciones = $this->collection->find(['estatus' => $estatus]);
+        return $reservaciones->toArray();
+    }
 }

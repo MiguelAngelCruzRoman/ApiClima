@@ -29,7 +29,7 @@
             },
             methods: {
                 fetchComentarios() {
-                    axios.get('https://e4ac-2806-10a6-f-92a3-42d-8d90-2cef-28b8.ngrok-free.app/comentarios')
+                    axios.get('https://sailfish-master-goose.ngrok-free.app/comentarios')
                         .then(response => {
                             this.comentarios = response.data;
                         })

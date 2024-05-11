@@ -25,10 +25,10 @@ class Clientes extends BaseController
         return view('clientes/index'); 
     }
 
-    public function getClienteNombre($nombre)
+    public function getByNombre($nombre)
     {
         $clientes = new ClientesModel();
-        $allClientes = $clientes->getClienteNombre($nombre);
+        $allClientes = $clientes->getByNombre($nombre);
 
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);

@@ -21,4 +21,9 @@ class FacturasModel extends Model
         return $facturas->toArray();
     }
 
+    public function getByMetodoPago($metodoPago)
+    {
+        $facturas = $this->collection->find( ['metodoPago' => $metodoPago] );
+        return $facturas->toArray();
+    }
 }

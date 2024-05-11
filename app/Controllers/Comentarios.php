@@ -24,10 +24,10 @@ class Comentarios extends BaseController
         return view('comentarios/index'); 
     }
 
-    public function getComentarioCalificacion($calificacion)
+    public function getByCalificacion($calificacion)
     {
         $comentarios = new ComentariosModel();
-        $allComentarios = $comentarios->getComentarioCalificacion($calificacion);
+        $allComentarios = $comentarios->getByCalificacion($calificacion);
 
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);

@@ -21,7 +21,7 @@ class ComentariosModel extends Model
         return $comentarios->toArray();
     }
 
-    public function getComentarioCalificacion($calificacion)
+    public function getByCalificacion($calificacion)
     {
         $comentarios = $this->collection->find( ['calificacion' => intval($calificacion)] );
         return $comentarios->toArray();

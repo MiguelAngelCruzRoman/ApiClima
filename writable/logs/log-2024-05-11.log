@@ -1,0 +1,257 @@
+CRITICAL - 2024-05-11 20:23:28 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Habitaciones.php(30): CodeIgniter\Model->__call('getByMetodoPago', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Habitaciones->getByPrecio('4322')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Habitaciones))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 20:23:32 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Habitaciones.php(30): CodeIgniter\Model->__call('getByMetodoPago', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Habitaciones->getByPrecio('4322')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Habitaciones))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 20:23:35 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Habitaciones.php(30): CodeIgniter\Model->__call('getByMetodoPago', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Habitaciones->getByPrecio('4322')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Habitaciones))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 20:23:37 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Habitaciones.php(30): CodeIgniter\Model->__call('getByMetodoPago', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Habitaciones->getByPrecio('4322')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Habitaciones))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 20:23:37 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Habitaciones.php(30): CodeIgniter\Model->__call('getByMetodoPago', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Habitaciones->getByPrecio('4322')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Habitaciones))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 20:23:41 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Habitaciones.php(30): CodeIgniter\Model->__call('getByMetodoPago', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Habitaciones->getByPrecio('4322')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Habitaciones))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 20:24:00 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Habitaciones.php(30): CodeIgniter\Model->__call('getByMetodoPago', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Habitaciones->getByPrecio('4322')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Habitaciones))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 20:24:36 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Habitaciones.php(30): CodeIgniter\Model->__call('getByMetodoPago', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Habitaciones->getByPrecio('4322')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Habitaciones))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 20:25:27 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Habitaciones.php(30): CodeIgniter\Model->__call('getByMetodoPago', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Habitaciones->getByPrecio('4322')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Habitaciones))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 20:26:01 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Habitaciones.php(30): CodeIgniter\Model->__call('getByMetodoPago', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Habitaciones->getByPrecio('4322')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Habitaciones))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 20:47:15 --> Failed to parse time string (1710669774000) at position 12 (0): Unexpected character
+in APPPATH\Models\ReservacionesModel.php on line 27.
+ 1 APPPATH\Models\ReservacionesModel.php(27): DateTime->__construct('1710669774000')
+ 2 APPPATH\Controllers\Reservaciones.php(30): App\Models\ReservacionesModel->getByFechaReservacion('1710669774000')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('1710669774000')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 20:48:50 --> Failed to parse time string (1710669774000) at position 12 (0): Unexpected character
+in APPPATH\Models\ReservacionesModel.php on line 27.
+ 1 APPPATH\Models\ReservacionesModel.php(27): DateTime->__construct('1710669774000')
+ 2 APPPATH\Controllers\Reservaciones.php(30): App\Models\ReservacionesModel->getByFechaReservacion('1710669774000')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('1710669774000')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 20:53:40 --> Failed to parse time string (1710669774000) at position 12 (0): Unexpected character
+in APPPATH\Models\ReservacionesModel.php on line 27.
+ 1 APPPATH\Models\ReservacionesModel.php(27): DateTime->__construct('1710669774000')
+ 2 APPPATH\Controllers\Reservaciones.php(30): App\Models\ReservacionesModel->getByFechaReservacion('1710669774000')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('1710669774000')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 20:56:47 --> Failed to parse time string (1710669774000) at position 12 (0): Unexpected character
+in APPPATH\Models\ReservacionesModel.php on line 28.
+ 1 APPPATH\Models\ReservacionesModel.php(28): DateTime->__construct('1710669774000')
+ 2 APPPATH\Controllers\Reservaciones.php(30): App\Models\ReservacionesModel->getByFechaReservacion('1710669774000')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('1710669774000')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 20:59:29 --> Failed to parse time string (1710669774000) at position 12 (0): Unexpected character
+in APPPATH\Models\ReservacionesModel.php on line 29.
+ 1 APPPATH\Models\ReservacionesModel.php(29): DateTime->__construct('1710669774000')
+ 2 APPPATH\Controllers\Reservaciones.php(30): App\Models\ReservacionesModel->getByFechaReservacion('1710669774000')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('1710669774000')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 20:59:36 --> unknown operator: $date
+in VENDORPATH\mongodb\mongodb\src\Operation\Find.php on line 328.
+ 1 VENDORPATH\mongodb\mongodb\src\Operation\Find.php(328): MongoDB\Driver\Server->executeQuery('apiHotel.reservaciones', Object(MongoDB\Driver\Query), [...])
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(646): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+ 3 APPPATH\Models\ReservacionesModel.php(35): MongoDB\Collection->find([...])
+ 4 APPPATH\Controllers\Reservaciones.php(30): App\Models\ReservacionesModel->getByFechaReservacion('2024-03-17')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('2024-03-17')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 21:00:10 --> Object of class DateTime could not be converted to string
+in APPPATH\Models\ReservacionesModel.php on line 36.
+ 1 APPPATH\Controllers\Reservaciones.php(30): App\Models\ReservacionesModel->getByFechaReservacion('2024-03-17')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('2024-03-17')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 21:06:12 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Models\ReservacionesModel.php on line 27.
+ 1 APPPATH\Models\ReservacionesModel.php(27): date('d-m-Y', '2024-03-17')
+ 2 APPPATH\Controllers\Reservaciones.php(30): App\Models\ReservacionesModel->getByFechaReservacion('2024-03-17')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('2024-03-17')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 21:11:04 --> Failed to parse time string (1800205657) at position 7 (6): Unexpected character
+in APPPATH\Models\ReservacionesModel.php on line 27.
+ 1 APPPATH\Models\ReservacionesModel.php(27): DateTime->__construct('1800205657')
+ 2 APPPATH\Controllers\Reservaciones.php(30): App\Models\ReservacionesModel->getByFechaReservacion('1800205657')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('1800205657')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 21:16:41 --> A non-numeric value encountered
+in APPPATH\Models\ReservacionesModel.php on line 27.
+ 1 APPPATH\Models\ReservacionesModel.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\app\\Models\\ReservacionesModel.php', 27)
+ 2 APPPATH\Controllers\Reservaciones.php(30): App\Models\ReservacionesModel->getByFechaReservacion('2024-03-17')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('2024-03-17')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 21:16:51 --> Failed to parse time string (2024000) at position 6 (0): Unexpected character
+in APPPATH\Models\ReservacionesModel.php on line 28.
+ 1 APPPATH\Models\ReservacionesModel.php(28): DateTime->__construct('2024000')
+ 2 APPPATH\Controllers\Reservaciones.php(30): App\Models\ReservacionesModel->getByFechaReservacion(2024000)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('2024-03-17')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 21:17:08 --> Failed to parse time string (2024000) at position 6 (0): Unexpected character
+in APPPATH\Models\ReservacionesModel.php on line 28.
+ 1 APPPATH\Models\ReservacionesModel.php(28): DateTime->__construct('2024000')
+ 2 APPPATH\Controllers\Reservaciones.php(30): App\Models\ReservacionesModel->getByFechaReservacion(2024000)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('2024-03-17')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 21:19:52 --> Undefined variable $timestamp
+in APPPATH\Models\ReservacionesModel.php on line 44.
+ 1 APPPATH\Models\ReservacionesModel.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $timestamp', 'C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\app\\Models\\ReservacionesModel.php', 44)
+ 2 APPPATH\Controllers\Reservaciones.php(30): App\Models\ReservacionesModel->getByFechaReservacion('2024-03-17')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('2024-03-17')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 21:20:46 --> Unmatched '}'
+in APPPATH\Models\ReservacionesModel.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\app\\Models\\ReservacionesModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ReservacionesModel')
+ 3 APPPATH\Controllers\Reservaciones.php(29): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ReservacionesModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('2024-03-17')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 21:21:04 --> Failed to parse time string (2024-03-17:00) at position 10 (:): Unexpected character
+in APPPATH\Models\ReservacionesModel.php on line 29.
+ 1 APPPATH\Models\ReservacionesModel.php(29): DateTime->__construct('2024-03-17:00', Object(DateTimeZone))
+ 2 APPPATH\Controllers\Reservaciones.php(30): App\Models\ReservacionesModel->getByFechaReservacion('2024-03-17:00')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('2024-03-17:00')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 21:30:24 --> syntax error, unexpected variable "$fechaObjI"
+in APPPATH\Models\ReservacionesModel.php on line 28.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\app\\Models\\ReservacionesModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ReservacionesModel')
+ 3 APPPATH\Controllers\Reservaciones.php(29): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ReservacionesModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('2024-03-17')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-11 21:30:47 --> syntax error, unexpected variable "$fechaObjI"
+in APPPATH\Models\ReservacionesModel.php on line 28.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\app\\Models\\ReservacionesModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ReservacionesModel')
+ 3 APPPATH\Controllers\Reservaciones.php(29): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ReservacionesModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByFechaReservacion('2024-03-17')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')

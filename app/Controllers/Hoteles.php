@@ -23,4 +23,15 @@ class Hoteles extends BaseController
     public function documentacionIndex(){
         return view('hoteles/index'); 
     }
+
+    public function getByCiudad($ciudad)
+    {
+        $hoteles = new HotelesModel();
+        $allHoteles = $hoteles->getByCiudad($ciudad);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allHoteles);
+        return $response;
+    }
 }

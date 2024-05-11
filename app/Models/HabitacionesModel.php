@@ -21,4 +21,9 @@ class HabitacionesModel extends Model
         return $habitaciones->toArray();
     }
 
+    public function getByPrecio($precio)
+    {
+        $habitaciones = $this->collection->find( ['precioNoche' => intval($precio)] );
+        return $habitaciones->toArray();
+    }
 }

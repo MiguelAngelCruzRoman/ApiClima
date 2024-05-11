@@ -1,0 +1,3600 @@
+[{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9666"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6a6"
+  },
+  "fechaEmision": {
+    "$date": "2023-07-25T04:31:10.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-08-19T04:31:10.000Z"
+  },
+  "pago": 408,
+  "impuestosAdicionales": 26,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9667"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6a7"
+  },
+  "fechaEmision": {
+    "$date": "2023-11-26T00:38:26.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-11T00:38:26.000Z"
+  },
+  "pago": 319,
+  "impuestosAdicionales": 4,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9668"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b66c"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-18T20:49:28.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-01T20:49:28.000Z"
+  },
+  "pago": 370,
+  "impuestosAdicionales": 27,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9669"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b671"
+  },
+  "fechaEmision": {
+    "$date": "2024-02-12T15:23:17.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-02T15:23:17.000Z"
+  },
+  "pago": 358,
+  "impuestosAdicionales": 39,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a966a"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6d3"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-06T17:33:31.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-31T17:33:31.000Z"
+  },
+  "pago": 134,
+  "impuestosAdicionales": 26,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a966b"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b644"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-07T20:02:23.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-08-09T20:02:23.000Z"
+  },
+  "pago": 213,
+  "impuestosAdicionales": 45,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a966c"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ac"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-04T10:39:47.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-31T10:39:47.000Z"
+  },
+  "pago": 262,
+  "impuestosAdicionales": 34,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a966d"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b679"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-14T12:11:36.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-12T12:11:36.000Z"
+  },
+  "pago": 426,
+  "impuestosAdicionales": 34,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a966e"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6f7"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-22T16:13:36.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-01-03T16:13:36.000Z"
+  },
+  "pago": 143,
+  "impuestosAdicionales": 12,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a966f"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b687"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-08T16:47:16.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-15T16:47:16.000Z"
+  },
+  "pago": 400,
+  "impuestosAdicionales": 41,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9670"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b694"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-11T06:18:03.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-30T06:18:03.000Z"
+  },
+  "pago": 192,
+  "impuestosAdicionales": 7,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9671"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6dd"
+  },
+  "fechaEmision": {
+    "$date": "2024-01-15T21:19:56.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-02-13T21:19:56.000Z"
+  },
+  "pago": 406,
+  "impuestosAdicionales": 24,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9672"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b680"
+  },
+  "fechaEmision": {
+    "$date": "2023-11-01T16:06:26.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-11-02T16:06:26.000Z"
+  },
+  "pago": 139,
+  "impuestosAdicionales": 47,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9673"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6a2"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-14T14:21:44.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-09T14:21:44.000Z"
+  },
+  "pago": 469,
+  "impuestosAdicionales": 28,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9674"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b705"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-14T02:00:42.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-05-09T02:00:42.000Z"
+  },
+  "pago": 171,
+  "impuestosAdicionales": 20,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9675"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b677"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-31T09:51:55.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-28T09:51:55.000Z"
+  },
+  "pago": 453,
+  "impuestosAdicionales": 4,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9676"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b690"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-04T06:19:23.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-05-03T06:19:23.000Z"
+  },
+  "pago": 164,
+  "impuestosAdicionales": 34,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9677"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b64c"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-24T07:22:12.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-11-13T07:22:12.000Z"
+  },
+  "pago": 297,
+  "impuestosAdicionales": 14,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9678"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6fe"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-23T23:48:34.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-06T23:48:34.000Z"
+  },
+  "pago": 454,
+  "impuestosAdicionales": 13,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9679"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b641"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-30T02:36:15.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-27T02:36:15.000Z"
+  },
+  "pago": 119,
+  "impuestosAdicionales": 28,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a967a"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b670"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-20T22:17:23.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-26T22:17:23.000Z"
+  },
+  "pago": 459,
+  "impuestosAdicionales": 48,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a967b"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b645"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-22T08:19:21.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-01T08:19:21.000Z"
+  },
+  "pago": 69,
+  "impuestosAdicionales": 3,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a967c"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6a0"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-10T03:14:59.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-05-03T03:14:59.000Z"
+  },
+  "pago": 420,
+  "impuestosAdicionales": 10,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a967d"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b651"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-18T15:14:21.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-12T15:14:21.000Z"
+  },
+  "pago": 198,
+  "impuestosAdicionales": 15,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a967e"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b693"
+  },
+  "fechaEmision": {
+    "$date": "2023-06-04T09:07:44.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-30T09:07:44.000Z"
+  },
+  "pago": 359,
+  "impuestosAdicionales": 36,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a967f"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ac"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-07T06:53:42.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-20T06:53:42.000Z"
+  },
+  "pago": 82,
+  "impuestosAdicionales": 2,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9680"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ec"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-19T04:53:56.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-20T04:53:56.000Z"
+  },
+  "pago": 438,
+  "impuestosAdicionales": 43,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9681"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6bc"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-19T17:09:50.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-16T17:09:50.000Z"
+  },
+  "pago": 134,
+  "impuestosAdicionales": 39,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9682"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b695"
+  },
+  "fechaEmision": {
+    "$date": "2023-06-25T02:05:08.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-07-01T02:05:08.000Z"
+  },
+  "pago": 170,
+  "impuestosAdicionales": 10,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9683"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b689"
+  },
+  "fechaEmision": {
+    "$date": "2024-01-01T03:03:46.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-01-27T03:03:46.000Z"
+  },
+  "pago": 301,
+  "impuestosAdicionales": 5,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9684"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ba"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-30T09:11:57.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-05-30T09:11:57.000Z"
+  },
+  "pago": 60,
+  "impuestosAdicionales": 17,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9685"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b689"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-16T07:43:40.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-29T07:43:40.000Z"
+  },
+  "pago": 429,
+  "impuestosAdicionales": 28,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9686"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6a0"
+  },
+  "fechaEmision": {
+    "$date": "2023-11-28T11:34:34.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-05T11:34:34.000Z"
+  },
+  "pago": 372,
+  "impuestosAdicionales": 23,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9687"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b703"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-26T18:08:36.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-11-22T18:08:36.000Z"
+  },
+  "pago": 464,
+  "impuestosAdicionales": 1,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9688"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b68b"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-27T16:38:34.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-11-13T16:38:34.000Z"
+  },
+  "pago": 237,
+  "impuestosAdicionales": 49,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9689"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6b2"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-27T13:28:46.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-06T13:28:46.000Z"
+  },
+  "pago": 476,
+  "impuestosAdicionales": 32,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a968a"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b678"
+  },
+  "fechaEmision": {
+    "$date": "2024-01-09T04:18:29.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-02-02T04:18:29.000Z"
+  },
+  "pago": 400,
+  "impuestosAdicionales": 12,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a968b"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b663"
+  },
+  "fechaEmision": {
+    "$date": "2023-07-15T15:25:23.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-08-03T15:25:23.000Z"
+  },
+  "pago": 327,
+  "impuestosAdicionales": 15,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a968c"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b694"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-19T18:31:36.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-01-04T18:31:36.000Z"
+  },
+  "pago": 331,
+  "impuestosAdicionales": 46,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a968d"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6d7"
+  },
+  "fechaEmision": {
+    "$date": "2023-11-03T23:44:22.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-11-17T23:44:22.000Z"
+  },
+  "pago": 401,
+  "impuestosAdicionales": 5,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a968e"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b707"
+  },
+  "fechaEmision": {
+    "$date": "2023-07-13T09:27:26.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-08-01T09:27:26.000Z"
+  },
+  "pago": 304,
+  "impuestosAdicionales": 14,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a968f"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b690"
+  },
+  "fechaEmision": {
+    "$date": "2023-06-28T03:33:04.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-07-15T03:33:04.000Z"
+  },
+  "pago": 87,
+  "impuestosAdicionales": 37,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9690"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6bb"
+  },
+  "fechaEmision": {
+    "$date": "2024-02-13T01:52:55.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-08T01:52:55.000Z"
+  },
+  "pago": 273,
+  "impuestosAdicionales": 28,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9691"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b645"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-22T05:13:28.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-02T05:13:28.000Z"
+  },
+  "pago": 357,
+  "impuestosAdicionales": 2,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9692"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ed"
+  },
+  "fechaEmision": {
+    "$date": "2023-06-16T07:51:40.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-07-04T07:51:40.000Z"
+  },
+  "pago": 142,
+  "impuestosAdicionales": 0,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9693"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6c4"
+  },
+  "fechaEmision": {
+    "$date": "2024-02-14T19:07:24.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-02T19:07:24.000Z"
+  },
+  "pago": 232,
+  "impuestosAdicionales": 49,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9694"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b701"
+  },
+  "fechaEmision": {
+    "$date": "2024-02-21T17:31:20.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-18T17:31:20.000Z"
+  },
+  "pago": 236,
+  "impuestosAdicionales": 49,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9695"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ef"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-23T04:20:18.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-03T04:20:18.000Z"
+  },
+  "pago": 63,
+  "impuestosAdicionales": 27,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9696"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6cb"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-24T09:04:59.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-16T09:04:59.000Z"
+  },
+  "pago": 408,
+  "impuestosAdicionales": 8,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9697"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6b3"
+  },
+  "fechaEmision": {
+    "$date": "2023-11-15T15:01:56.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-11-22T15:01:56.000Z"
+  },
+  "pago": 322,
+  "impuestosAdicionales": 8,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9698"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6b1"
+  },
+  "fechaEmision": {
+    "$date": "2024-01-17T08:33:41.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-01-29T08:33:41.000Z"
+  },
+  "pago": 266,
+  "impuestosAdicionales": 14,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9699"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b663"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-02T01:36:19.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-22T01:36:19.000Z"
+  },
+  "pago": 77,
+  "impuestosAdicionales": 47,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a969a"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6b0"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-05T10:51:22.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-08T10:51:22.000Z"
+  },
+  "pago": 113,
+  "impuestosAdicionales": 31,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a969b"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b649"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-02T19:51:00.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-05T19:51:00.000Z"
+  },
+  "pago": 378,
+  "impuestosAdicionales": 41,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a969c"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ac"
+  },
+  "fechaEmision": {
+    "$date": "2023-11-14T15:44:55.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-11-22T15:44:55.000Z"
+  },
+  "pago": 98,
+  "impuestosAdicionales": 48,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a969d"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ec"
+  },
+  "fechaEmision": {
+    "$date": "2023-07-04T18:05:02.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-07-10T18:05:02.000Z"
+  },
+  "pago": 276,
+  "impuestosAdicionales": 21,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a969e"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6bf"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-17T17:32:46.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-29T17:32:46.000Z"
+  },
+  "pago": 279,
+  "impuestosAdicionales": 34,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a969f"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6c8"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-23T00:49:27.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-05-21T00:49:27.000Z"
+  },
+  "pago": 477,
+  "impuestosAdicionales": 2,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96a0"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b687"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-01T21:11:52.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-05T21:11:52.000Z"
+  },
+  "pago": 88,
+  "impuestosAdicionales": 8,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96a1"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b646"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-06T16:56:13.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-16T16:56:13.000Z"
+  },
+  "pago": 242,
+  "impuestosAdicionales": 15,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96a2"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b69e"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-13T19:30:52.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-27T19:30:52.000Z"
+  },
+  "pago": 111,
+  "impuestosAdicionales": 4,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96a3"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b665"
+  },
+  "fechaEmision": {
+    "$date": "2023-06-02T23:38:32.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-23T23:38:32.000Z"
+  },
+  "pago": 379,
+  "impuestosAdicionales": 43,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96a4"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6a0"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-26T16:17:11.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-06T16:17:11.000Z"
+  },
+  "pago": 78,
+  "impuestosAdicionales": 15,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96a5"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b65b"
+  },
+  "fechaEmision": {
+    "$date": "2023-11-25T13:59:27.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-11T13:59:27.000Z"
+  },
+  "pago": 395,
+  "impuestosAdicionales": 24,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96a6"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b67e"
+  },
+  "fechaEmision": {
+    "$date": "2023-06-24T11:52:28.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-29T11:52:28.000Z"
+  },
+  "pago": 270,
+  "impuestosAdicionales": 7,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96a7"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b66c"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-17T13:13:44.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-26T13:13:44.000Z"
+  },
+  "pago": 484,
+  "impuestosAdicionales": 7,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96a8"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b65f"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-11T14:37:47.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-04-19T14:37:47.000Z"
+  },
+  "pago": 450,
+  "impuestosAdicionales": 20,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96a9"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b675"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-21T10:53:54.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-27T10:53:54.000Z"
+  },
+  "pago": 239,
+  "impuestosAdicionales": 19,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96aa"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6a0"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-21T13:59:26.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-04-03T13:59:26.000Z"
+  },
+  "pago": 258,
+  "impuestosAdicionales": 44,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96ab"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b65a"
+  },
+  "fechaEmision": {
+    "$date": "2023-11-25T08:51:12.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-23T08:51:12.000Z"
+  },
+  "pago": 123,
+  "impuestosAdicionales": 38,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96ac"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b668"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-15T12:38:30.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-13T12:38:30.000Z"
+  },
+  "pago": 96,
+  "impuestosAdicionales": 26,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96ad"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ce"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-11T02:37:56.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-17T02:37:56.000Z"
+  },
+  "pago": 258,
+  "impuestosAdicionales": 24,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96ae"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6e5"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-06T01:11:39.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-04-03T01:11:39.000Z"
+  },
+  "pago": 231,
+  "impuestosAdicionales": 0,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96af"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6b3"
+  },
+  "fechaEmision": {
+    "$date": "2023-07-14T10:09:04.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-08-06T10:09:04.000Z"
+  },
+  "pago": 460,
+  "impuestosAdicionales": 44,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96b0"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6b1"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-30T10:32:30.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-05-06T10:32:30.000Z"
+  },
+  "pago": 391,
+  "impuestosAdicionales": 5,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96b1"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b64e"
+  },
+  "fechaEmision": {
+    "$date": "2024-01-01T11:54:22.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-01-27T11:54:22.000Z"
+  },
+  "pago": 92,
+  "impuestosAdicionales": 45,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96b2"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b652"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-12T06:35:44.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-04-05T06:35:44.000Z"
+  },
+  "pago": 228,
+  "impuestosAdicionales": 45,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96b3"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6a8"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-20T18:48:32.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-26T18:48:32.000Z"
+  },
+  "pago": 150,
+  "impuestosAdicionales": 27,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96b4"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ab"
+  },
+  "fechaEmision": {
+    "$date": "2024-02-28T11:11:07.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-29T11:11:07.000Z"
+  },
+  "pago": 267,
+  "impuestosAdicionales": 1,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96b5"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b65a"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-16T22:56:04.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-06T22:56:04.000Z"
+  },
+  "pago": 55,
+  "impuestosAdicionales": 48,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96b6"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6e3"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-30T21:33:38.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-11-16T21:33:38.000Z"
+  },
+  "pago": 56,
+  "impuestosAdicionales": 11,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96b7"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6f7"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-15T19:24:56.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-18T19:24:56.000Z"
+  },
+  "pago": 335,
+  "impuestosAdicionales": 35,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96b8"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b69f"
+  },
+  "fechaEmision": {
+    "$date": "2023-07-20T06:32:33.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-08-06T06:32:33.000Z"
+  },
+  "pago": 178,
+  "impuestosAdicionales": 2,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96b9"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6e0"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-27T15:49:16.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-01-06T15:49:16.000Z"
+  },
+  "pago": 288,
+  "impuestosAdicionales": 43,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96ba"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6c8"
+  },
+  "fechaEmision": {
+    "$date": "2023-11-10T07:58:16.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-11-30T07:58:16.000Z"
+  },
+  "pago": 433,
+  "impuestosAdicionales": 38,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96bb"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b696"
+  },
+  "fechaEmision": {
+    "$date": "2023-06-05T01:54:11.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-07-05T01:54:11.000Z"
+  },
+  "pago": 151,
+  "impuestosAdicionales": 35,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96bc"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6bf"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-23T12:37:17.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-27T12:37:17.000Z"
+  },
+  "pago": 61,
+  "impuestosAdicionales": 3,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96bd"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ec"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-22T16:40:43.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-04T16:40:43.000Z"
+  },
+  "pago": 64,
+  "impuestosAdicionales": 11,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96be"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6c4"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-05T13:17:39.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-11-04T13:17:39.000Z"
+  },
+  "pago": 491,
+  "impuestosAdicionales": 38,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96bf"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b670"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-24T09:43:44.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-05-07T09:43:44.000Z"
+  },
+  "pago": 473,
+  "impuestosAdicionales": 47,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96c0"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ec"
+  },
+  "fechaEmision": {
+    "$date": "2023-07-29T21:23:29.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-08-03T21:23:29.000Z"
+  },
+  "pago": 444,
+  "impuestosAdicionales": 35,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96c1"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6f5"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-10T08:46:34.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-05-06T08:46:34.000Z"
+  },
+  "pago": 223,
+  "impuestosAdicionales": 38,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96c2"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b645"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-27T15:08:51.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-05-28T15:08:51.000Z"
+  },
+  "pago": 375,
+  "impuestosAdicionales": 17,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96c3"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6c7"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-27T23:34:09.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-13T23:34:09.000Z"
+  },
+  "pago": 477,
+  "impuestosAdicionales": 1,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96c4"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b64d"
+  },
+  "fechaEmision": {
+    "$date": "2023-06-29T09:55:06.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-07-17T09:55:06.000Z"
+  },
+  "pago": 60,
+  "impuestosAdicionales": 5,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96c5"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b683"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-26T06:56:45.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-04-29T06:56:45.000Z"
+  },
+  "pago": 316,
+  "impuestosAdicionales": 45,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96c6"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b671"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-12T10:29:26.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-05-24T10:29:26.000Z"
+  },
+  "pago": 107,
+  "impuestosAdicionales": 22,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96c7"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6d7"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-07T05:53:23.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-12T05:53:23.000Z"
+  },
+  "pago": 143,
+  "impuestosAdicionales": 41,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96c8"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b644"
+  },
+  "fechaEmision": {
+    "$date": "2023-07-28T10:45:38.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-08-19T10:45:38.000Z"
+  },
+  "pago": 168,
+  "impuestosAdicionales": 25,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96c9"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6a7"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-20T10:37:52.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-08T10:37:52.000Z"
+  },
+  "pago": 188,
+  "impuestosAdicionales": 16,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96ca"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b691"
+  },
+  "fechaEmision": {
+    "$date": "2024-01-19T12:44:56.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-02-18T12:44:56.000Z"
+  },
+  "pago": 287,
+  "impuestosAdicionales": 7,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96cb"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b640"
+  },
+  "fechaEmision": {
+    "$date": "2024-01-03T01:55:35.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-01-12T01:55:35.000Z"
+  },
+  "pago": 102,
+  "impuestosAdicionales": 36,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96cc"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b650"
+  },
+  "fechaEmision": {
+    "$date": "2024-01-31T21:01:47.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-02-26T21:01:47.000Z"
+  },
+  "pago": 414,
+  "impuestosAdicionales": 23,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96cd"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6e4"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-21T13:38:05.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-04-08T13:38:05.000Z"
+  },
+  "pago": 397,
+  "impuestosAdicionales": 29,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96ce"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b690"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-13T10:49:05.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-21T10:49:05.000Z"
+  },
+  "pago": 409,
+  "impuestosAdicionales": 35,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96cf"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b654"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-09T23:26:09.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-04-29T23:26:09.000Z"
+  },
+  "pago": 411,
+  "impuestosAdicionales": 18,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96d0"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b662"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-05T01:02:03.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-25T01:02:03.000Z"
+  },
+  "pago": 394,
+  "impuestosAdicionales": 38,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96d1"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ea"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-26T13:30:34.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-05-04T13:30:34.000Z"
+  },
+  "pago": 113,
+  "impuestosAdicionales": 16,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96d2"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6a1"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-19T00:47:36.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-14T00:47:36.000Z"
+  },
+  "pago": 149,
+  "impuestosAdicionales": 0,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96d3"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6a3"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-04T12:10:34.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-08T12:10:34.000Z"
+  },
+  "pago": 433,
+  "impuestosAdicionales": 3,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96d4"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6a7"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-10T22:57:08.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-21T22:57:08.000Z"
+  },
+  "pago": 148,
+  "impuestosAdicionales": 29,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96d5"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6dc"
+  },
+  "fechaEmision": {
+    "$date": "2024-01-29T16:56:41.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-02-02T16:56:41.000Z"
+  },
+  "pago": 357,
+  "impuestosAdicionales": 42,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96d6"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6f1"
+  },
+  "fechaEmision": {
+    "$date": "2023-06-01T11:29:13.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-24T11:29:13.000Z"
+  },
+  "pago": 185,
+  "impuestosAdicionales": 6,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96d7"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b694"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-12T08:11:33.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-05-23T08:11:33.000Z"
+  },
+  "pago": 327,
+  "impuestosAdicionales": 18,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96d8"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b664"
+  },
+  "fechaEmision": {
+    "$date": "2024-02-27T17:36:14.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-27T17:36:14.000Z"
+  },
+  "pago": 225,
+  "impuestosAdicionales": 37,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96d9"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ca"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-10T12:12:53.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-04-15T12:12:53.000Z"
+  },
+  "pago": 132,
+  "impuestosAdicionales": 2,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96da"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b665"
+  },
+  "fechaEmision": {
+    "$date": "2023-07-08T20:11:36.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-07-10T20:11:36.000Z"
+  },
+  "pago": 124,
+  "impuestosAdicionales": 27,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96db"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6c8"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-24T15:38:37.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-05-11T15:38:37.000Z"
+  },
+  "pago": 325,
+  "impuestosAdicionales": 14,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96dc"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b666"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-19T15:39:04.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-04T15:39:04.000Z"
+  },
+  "pago": 482,
+  "impuestosAdicionales": 10,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96dd"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b685"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-04T19:41:02.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-04-23T19:41:02.000Z"
+  },
+  "pago": 394,
+  "impuestosAdicionales": 3,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96de"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6b9"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-30T23:09:50.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-04T23:09:50.000Z"
+  },
+  "pago": 424,
+  "impuestosAdicionales": 8,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96df"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6af"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-11T06:51:16.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-04T06:51:16.000Z"
+  },
+  "pago": 451,
+  "impuestosAdicionales": 3,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96e0"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6cd"
+  },
+  "fechaEmision": {
+    "$date": "2023-06-15T02:49:50.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-07-07T02:49:50.000Z"
+  },
+  "pago": 53,
+  "impuestosAdicionales": 50,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96e1"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6db"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-22T21:01:18.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-04-30T21:01:18.000Z"
+  },
+  "pago": 68,
+  "impuestosAdicionales": 6,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96e2"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b650"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-24T06:21:26.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-05-28T06:21:26.000Z"
+  },
+  "pago": 433,
+  "impuestosAdicionales": 19,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96e3"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b667"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-07T11:20:59.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-24T11:20:59.000Z"
+  },
+  "pago": 497,
+  "impuestosAdicionales": 13,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96e4"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6af"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-01T11:23:34.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-22T11:23:34.000Z"
+  },
+  "pago": 256,
+  "impuestosAdicionales": 1,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96e5"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ba"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-25T06:43:09.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-04-20T06:43:09.000Z"
+  },
+  "pago": 144,
+  "impuestosAdicionales": 48,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96e6"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b681"
+  },
+  "fechaEmision": {
+    "$date": "2023-07-21T17:01:34.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-07-27T17:01:34.000Z"
+  },
+  "pago": 195,
+  "impuestosAdicionales": 36,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96e7"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b701"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-11T18:56:05.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-29T18:56:05.000Z"
+  },
+  "pago": 296,
+  "impuestosAdicionales": 11,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96e8"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b648"
+  },
+  "fechaEmision": {
+    "$date": "2023-11-24T22:33:04.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-14T22:33:04.000Z"
+  },
+  "pago": 443,
+  "impuestosAdicionales": 21,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96e9"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b655"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-16T04:22:50.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-08-26T04:22:50.000Z"
+  },
+  "pago": 192,
+  "impuestosAdicionales": 43,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96ea"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6b1"
+  },
+  "fechaEmision": {
+    "$date": "2024-02-26T18:05:29.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-11T18:05:29.000Z"
+  },
+  "pago": 352,
+  "impuestosAdicionales": 12,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96eb"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b676"
+  },
+  "fechaEmision": {
+    "$date": "2023-11-07T16:33:24.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-11-23T16:33:24.000Z"
+  },
+  "pago": 86,
+  "impuestosAdicionales": 4,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96ec"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6d2"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-07T21:36:42.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-19T21:36:42.000Z"
+  },
+  "pago": 490,
+  "impuestosAdicionales": 15,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96ed"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6be"
+  },
+  "fechaEmision": {
+    "$date": "2023-06-28T10:23:14.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-07-19T10:23:14.000Z"
+  },
+  "pago": 169,
+  "impuestosAdicionales": 23,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96ee"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b644"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-08T06:02:12.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-03T06:02:12.000Z"
+  },
+  "pago": 194,
+  "impuestosAdicionales": 28,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96ef"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b680"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-25T06:26:38.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-04T06:26:38.000Z"
+  },
+  "pago": 474,
+  "impuestosAdicionales": 22,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96f0"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b648"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-13T07:07:12.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-24T07:07:12.000Z"
+  },
+  "pago": 124,
+  "impuestosAdicionales": 12,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96f1"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6e5"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-13T09:44:32.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-14T09:44:32.000Z"
+  },
+  "pago": 421,
+  "impuestosAdicionales": 10,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96f2"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6f6"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-24T23:08:45.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-01-08T23:08:45.000Z"
+  },
+  "pago": 491,
+  "impuestosAdicionales": 17,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96f3"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b702"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-23T19:59:29.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-01-08T19:59:29.000Z"
+  },
+  "pago": 237,
+  "impuestosAdicionales": 13,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96f4"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6d9"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-03T11:03:25.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-06T11:03:25.000Z"
+  },
+  "pago": 477,
+  "impuestosAdicionales": 5,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96f5"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b68d"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-13T08:14:38.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-05-12T08:14:38.000Z"
+  },
+  "pago": 401,
+  "impuestosAdicionales": 19,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96f6"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6f8"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-05T08:04:59.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-27T08:04:59.000Z"
+  },
+  "pago": 116,
+  "impuestosAdicionales": 1,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96f7"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6af"
+  },
+  "fechaEmision": {
+    "$date": "2023-06-03T14:26:17.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-08T14:26:17.000Z"
+  },
+  "pago": 264,
+  "impuestosAdicionales": 26,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96f8"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b669"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-15T19:57:38.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-09-18T19:57:38.000Z"
+  },
+  "pago": 99,
+  "impuestosAdicionales": 44,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96f9"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ba"
+  },
+  "fechaEmision": {
+    "$date": "2023-07-06T20:52:44.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-07-14T20:52:44.000Z"
+  },
+  "pago": 413,
+  "impuestosAdicionales": 35,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96fa"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6a7"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-01T23:44:47.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-19T23:44:47.000Z"
+  },
+  "pago": 126,
+  "impuestosAdicionales": 47,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96fb"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6dd"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-04T11:21:29.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-03T11:21:29.000Z"
+  },
+  "pago": 247,
+  "impuestosAdicionales": 0,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96fc"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ca"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-26T23:42:07.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-11T23:42:07.000Z"
+  },
+  "pago": 278,
+  "impuestosAdicionales": 47,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96fd"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6c5"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-16T04:25:25.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-08-25T04:25:25.000Z"
+  },
+  "pago": 232,
+  "impuestosAdicionales": 37,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96fe"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b690"
+  },
+  "fechaEmision": {
+    "$date": "2024-02-18T17:53:55.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-12T17:53:55.000Z"
+  },
+  "pago": 460,
+  "impuestosAdicionales": 22,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a96ff"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b695"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-04T01:50:50.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-09T01:50:50.000Z"
+  },
+  "pago": 214,
+  "impuestosAdicionales": 43,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9700"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6bb"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-07T02:59:08.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-28T02:59:08.000Z"
+  },
+  "pago": 192,
+  "impuestosAdicionales": 0,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9701"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b685"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-04T11:15:11.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-12T11:15:11.000Z"
+  },
+  "pago": 347,
+  "impuestosAdicionales": 41,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9702"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6e9"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-25T05:55:02.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-04-17T05:55:02.000Z"
+  },
+  "pago": 139,
+  "impuestosAdicionales": 5,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9703"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b66c"
+  },
+  "fechaEmision": {
+    "$date": "2024-02-01T12:02:21.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-02-07T12:02:21.000Z"
+  },
+  "pago": 479,
+  "impuestosAdicionales": 30,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9704"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6f2"
+  },
+  "fechaEmision": {
+    "$date": "2023-06-15T19:40:38.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-07-05T19:40:38.000Z"
+  },
+  "pago": 335,
+  "impuestosAdicionales": 38,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9705"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b69d"
+  },
+  "fechaEmision": {
+    "$date": "2024-02-11T13:36:09.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-10T13:36:09.000Z"
+  },
+  "pago": 265,
+  "impuestosAdicionales": 26,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9706"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b680"
+  },
+  "fechaEmision": {
+    "$date": "2024-02-18T05:53:59.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-10T05:53:59.000Z"
+  },
+  "pago": 279,
+  "impuestosAdicionales": 15,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9707"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6f2"
+  },
+  "fechaEmision": {
+    "$date": "2024-02-29T09:05:40.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-13T09:05:40.000Z"
+  },
+  "pago": 499,
+  "impuestosAdicionales": 10,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9708"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6e7"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-08T19:21:50.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-05-10T19:21:50.000Z"
+  },
+  "pago": 166,
+  "impuestosAdicionales": 4,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9709"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ad"
+  },
+  "fechaEmision": {
+    "$date": "2024-02-14T06:21:21.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-02-16T06:21:21.000Z"
+  },
+  "pago": 388,
+  "impuestosAdicionales": 25,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a970a"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6d4"
+  },
+  "fechaEmision": {
+    "$date": "2024-02-24T16:38:09.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-05T16:38:09.000Z"
+  },
+  "pago": 457,
+  "impuestosAdicionales": 6,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a970b"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b642"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-21T21:08:21.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-31T21:08:21.000Z"
+  },
+  "pago": 302,
+  "impuestosAdicionales": 44,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a970c"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6fa"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-04T04:40:11.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-29T04:40:11.000Z"
+  },
+  "pago": 472,
+  "impuestosAdicionales": 35,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a970d"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6f3"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-14T18:30:27.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-23T18:30:27.000Z"
+  },
+  "pago": 312,
+  "impuestosAdicionales": 4,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a970e"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b64d"
+  },
+  "fechaEmision": {
+    "$date": "2023-11-14T03:08:48.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-11-25T03:08:48.000Z"
+  },
+  "pago": 419,
+  "impuestosAdicionales": 32,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a970f"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b64b"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-03T04:58:08.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-28T04:58:08.000Z"
+  },
+  "pago": 303,
+  "impuestosAdicionales": 35,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9710"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b65c"
+  },
+  "fechaEmision": {
+    "$date": "2023-07-30T21:14:04.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-08-01T21:14:04.000Z"
+  },
+  "pago": 496,
+  "impuestosAdicionales": 7,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9711"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6b1"
+  },
+  "fechaEmision": {
+    "$date": "2024-01-19T04:06:09.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-02-12T04:06:09.000Z"
+  },
+  "pago": 441,
+  "impuestosAdicionales": 29,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9712"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6d3"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-02T14:25:28.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-08-24T14:25:28.000Z"
+  },
+  "pago": 212,
+  "impuestosAdicionales": 40,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9713"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b666"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-23T05:13:47.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-08-29T05:13:47.000Z"
+  },
+  "pago": 397,
+  "impuestosAdicionales": 40,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9714"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b698"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-12T00:47:54.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-11-05T00:47:54.000Z"
+  },
+  "pago": 450,
+  "impuestosAdicionales": 7,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9715"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b64b"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-29T22:29:58.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-04-09T22:29:58.000Z"
+  },
+  "pago": 237,
+  "impuestosAdicionales": 3,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9716"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b707"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-09T00:32:09.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-14T00:32:09.000Z"
+  },
+  "pago": 59,
+  "impuestosAdicionales": 1,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9717"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b68a"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-13T21:53:11.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-04-06T21:53:11.000Z"
+  },
+  "pago": 232,
+  "impuestosAdicionales": 16,
+  "metodoPago": "Efectivo",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9718"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6dd"
+  },
+  "fechaEmision": {
+    "$date": "2023-08-21T23:18:37.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-08-30T23:18:37.000Z"
+  },
+  "pago": 123,
+  "impuestosAdicionales": 21,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9719"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b656"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-28T20:03:32.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-23T20:03:32.000Z"
+  },
+  "pago": 459,
+  "impuestosAdicionales": 40,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a971a"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ce"
+  },
+  "fechaEmision": {
+    "$date": "2023-06-07T15:09:01.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-30T15:09:01.000Z"
+  },
+  "pago": 472,
+  "impuestosAdicionales": 28,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a971b"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6aa"
+  },
+  "fechaEmision": {
+    "$date": "2023-06-29T20:32:05.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-07-18T20:32:05.000Z"
+  },
+  "pago": 74,
+  "impuestosAdicionales": 3,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a971c"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b672"
+  },
+  "fechaEmision": {
+    "$date": "2023-11-16T08:40:32.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-09T08:40:32.000Z"
+  },
+  "pago": 361,
+  "impuestosAdicionales": 12,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a971d"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b700"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-24T13:14:41.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-04T13:14:41.000Z"
+  },
+  "pago": 445,
+  "impuestosAdicionales": 40,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a971e"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ec"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-13T15:42:36.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-05-27T15:42:36.000Z"
+  },
+  "pago": 69,
+  "impuestosAdicionales": 17,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a971f"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6a5"
+  },
+  "fechaEmision": {
+    "$date": "2024-04-26T09:01:18.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-05-26T09:01:18.000Z"
+  },
+  "pago": 115,
+  "impuestosAdicionales": 50,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9720"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6bf"
+  },
+  "fechaEmision": {
+    "$date": "2024-02-24T22:22:20.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-13T22:22:20.000Z"
+  },
+  "pago": 217,
+  "impuestosAdicionales": 4,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9721"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6f7"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-29T19:07:19.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-11-24T19:07:19.000Z"
+  },
+  "pago": 164,
+  "impuestosAdicionales": 43,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9722"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6cc"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-26T22:48:01.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-15T22:48:01.000Z"
+  },
+  "pago": 189,
+  "impuestosAdicionales": 45,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9723"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6ac"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-02T03:19:14.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-14T03:19:14.000Z"
+  },
+  "pago": 418,
+  "impuestosAdicionales": 48,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9724"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6b6"
+  },
+  "fechaEmision": {
+    "$date": "2023-09-07T20:48:35.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-02T20:48:35.000Z"
+  },
+  "pago": 208,
+  "impuestosAdicionales": 40,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9725"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b652"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-11T00:35:36.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-05-30T00:35:36.000Z"
+  },
+  "pago": 90,
+  "impuestosAdicionales": 33,
+  "metodoPago": "Transferencia bancaria",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9726"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6fd"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-13T15:52:16.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-12-22T15:52:16.000Z"
+  },
+  "pago": 399,
+  "impuestosAdicionales": 35,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9727"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b648"
+  },
+  "fechaEmision": {
+    "$date": "2024-01-27T01:41:07.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-02-12T01:41:07.000Z"
+  },
+  "pago": 462,
+  "impuestosAdicionales": 39,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9728"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b654"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-20T02:20:34.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-04-18T02:20:34.000Z"
+  },
+  "pago": 59,
+  "impuestosAdicionales": 19,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pagada"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a9729"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b681"
+  },
+  "fechaEmision": {
+    "$date": "2023-05-23T19:42:24.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-06-11T19:42:24.000Z"
+  },
+  "pago": 89,
+  "impuestosAdicionales": 13,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a972a"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b658"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-20T02:39:14.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-27T02:39:14.000Z"
+  },
+  "pago": 322,
+  "impuestosAdicionales": 36,
+  "metodoPago": "Efectivo",
+  "estatus": "Vencida"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a972b"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b683"
+  },
+  "fechaEmision": {
+    "$date": "2023-12-24T17:13:47.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-01-11T17:13:47.000Z"
+  },
+  "pago": 493,
+  "impuestosAdicionales": 36,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a972c"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6af"
+  },
+  "fechaEmision": {
+    "$date": "2024-03-01T17:11:26.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2024-03-05T17:11:26.000Z"
+  },
+  "pago": 484,
+  "impuestosAdicionales": 7,
+  "metodoPago": "Efectivo",
+  "estatus": "Pendiente"
+},
+{
+  "_id": {
+    "$oid": "66351be80c34e271d83a972d"
+  },
+  "id_Reservacion": {
+    "$oid": "66351bde208e36747d12b6fb"
+  },
+  "fechaEmision": {
+    "$date": "2023-10-01T12:06:08.000Z"
+  },
+  "fechaVencimiento": {
+    "$date": "2023-10-10T12:06:08.000Z"
+  },
+  "pago": 53,
+  "impuestosAdicionales": 38,
+  "metodoPago": "Tarjeta de crédito",
+  "estatus": "Pendiente"
+}]

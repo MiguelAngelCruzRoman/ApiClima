@@ -23,4 +23,15 @@ class Reservaciones extends BaseController
     public function documentacionIndex(){
         return view('reservaciones/index'); 
     }
+
+    public function getByEstatus($estatus)
+    {
+        $reservaciones = new ReservacionesModel();
+        $allReservaciones = $reservaciones->getByEstatus($estatus);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allReservaciones);
+        return $response;
+    }
 }

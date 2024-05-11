@@ -23,4 +23,15 @@ class Facturas extends BaseController
     public function documentacionIndex(){
         return view('facturas/index'); 
     }
+
+    public function getByMetodoPago($metodoPago)
+    {
+        $facturas = new FacturasModel();
+        $allFacturas = $facturas->getByMetodoPago($metodoPago);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allFacturas);
+        return $response;
+    }
 }

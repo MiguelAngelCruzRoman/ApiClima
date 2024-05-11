@@ -21,11 +21,19 @@ class ClientesModel extends Model
         return $clientes->toArray();
     }
 
-    public function getClienteNombre($nombre)
+    public function getByNombre($nombre)
     {
-        $clientes = $this->collection->find( [ 'primerNombre' => $nombre] );
+        $clientes = $this->collection->find([
+            '$or' => [
+                ['primerNombre' => $nombre],
+                ['segundoNombre' => $nombre],
+                ['apellidoPaterno' => $nombre],
+                ['apellidoMaterno' => $nombre]
+            ]
+        ]);
 
         return $clientes->toArray();
     }
+
 
 }

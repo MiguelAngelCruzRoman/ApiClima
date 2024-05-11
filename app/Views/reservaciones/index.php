@@ -1,67 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no">
-    <title>Documentación de Reservaciones</title>
+    <title>Documentación de la API de Reservaciones</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        #app {
-            padding: 20px;
-        }
-        h1, h2 {
-            margin: 0;
-            padding: 0;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-        .banner {
-            background-color: #f2f2f2;
-            padding: 20px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .banner h1, .banner h2 {
-            color: #333;
-        }
-        .reservations {
-            margin-top: 20px;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <div id="app">
-        <div class="banner">
-            <h1>Documentación de Reservaciones</h1>
+    <div id="app" class="container mt-5">
+        <div class="banner bg-light p-3 mb-3">
+            <h1 class="text-dark">Documentación de la API</h1>
         </div>
-        <button @click="fetchReservaciones">Obtener Reservaciones</button>
-        <div class="reservations" v-if="reservaciones.length">
-            <h2>Reservaciones:</h2>
-            <ul>
-                <li v-for="reserva in reservaciones" :key="reserva._id">
-                    {{ reserva }}
-                </li>
-            </ul>
+
+        <form @submit.prevent="fetchReservaciones">
+            <div class="mb-3 d-flex align-items-center">
+                <div class="url-box p-3 border rounded me-1">
+                    <span hidden>Resource URL:</span>https://sailfish-master-goose.ngrok-free.app/reservaciones/
+                </div>
+                <input type="text" class="url-box p-3 border rounded me-1 flex-grow-1" v-model="ruta"
+                    placeholder="Introduce la ruta">
+                <button type="submit" class="btn btn-success">Hacer consulta</button>
+            </div>
+        </form>
+        <div class="reservations mb-4">
+            <div class="elementotions" v-if="reservaciones.length">
+                <h2 v-if="ruta !== ''">Resultados para "{{ruta}}":</h2>
+                <h2 v-else>Todos los registros de las reservaciones:</h2>
+
+                <pre
+                    style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ formattedReservaciones }}</code></pre>
+                    <a href="" onclick="window.location.href='{{ruta}}'">Ver JSON</a>
+            </div>
         </div>
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -69,11 +44,12 @@
         new Vue({
             el: '#app',
             data: {
-                reservaciones: []
+                reservaciones: [],
+                ruta: ''
             },
             methods: {
                 fetchReservaciones() {
-                    axios.get('https://e4ac-2806-10a6-f-92a3-42d-8d90-2cef-28b8.ngrok-free.app/reservaciones')
+                    axios.get('https://sailfish-master-goose.ngrok-free.app/reservaciones/' + this.ruta)
                         .then(response => {
                             this.reservaciones = response.data;
                         })
@@ -81,8 +57,18 @@
                             console.error('Error al obtener los reservaciones:', error);
                         });
                 }
+            },
+            computed: {
+                formattedReservaciones() {
+                    return JSON.stringify(this.reservaciones, null, 1);
+                }
             }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('form').dispatchEvent(new Event('submit'));
         });
     </script>
 </body>
+
 </html>
