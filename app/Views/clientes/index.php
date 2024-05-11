@@ -27,7 +27,7 @@
             },
             methods: {
                 fetchClientes() {
-                    axios.get('http://localhost:8080/clientes')
+                    axios.get('https://e4ac-2806-10a6-f-92a3-42d-8d90-2cef-28b8.ngrok-free.app/clientes')
                         .then(response => {
                             this.clientes = response.data;
                         })

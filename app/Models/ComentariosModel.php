@@ -12,7 +12,7 @@ class ComentariosModel extends Model
     public function __construct()
     {
         parent::__construct();
-        $this->collection = (new MongoDBClient)->apiHotel->comentarios;
+        $this->collection = (new MongoDBClient('mongodb+srv://YoMero:Contrasenia.Segura.123@yomerocluster.eit2hnw.mongodb.net/?retryWrites=true&w=majority&appName=YoMeroCluster'))->apiHotel->comentarios;
     }
 
     public function index()
@@ -21,4 +21,9 @@ class ComentariosModel extends Model
         return $comentarios->toArray();
     }
 
+    public function getComentarioCalificacion($calificacion)
+    {
+        $comentarios = $this->collection->find( ['calificacion' => intval($calificacion)] );
+        return $comentarios->toArray();
+    }
 }

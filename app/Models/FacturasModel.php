@@ -12,7 +12,7 @@ class FacturasModel extends Model
     public function __construct()
     {
         parent::__construct();
-        $this->collection = (new MongoDBClient)->apiHotel->facturas;
+        $this->collection = (new MongoDBClient('mongodb+srv://YoMero:Contrasenia.Segura.123@yomerocluster.eit2hnw.mongodb.net/?retryWrites=true&w=majority&appName=YoMeroCluster'))->apiHotel->facturas;
     }
 
     public function index()

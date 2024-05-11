@@ -27,7 +27,7 @@
             },
             methods: {
                 fetchHoteles() {
-                    axios.get('http://localhost:8080/hoteles')
+                    axios.get('https://e4ac-2806-10a6-f-92a3-42d-8d90-2cef-28b8.ngrok-free.app/hoteles')
                         .then(response => {
                             this.hoteles = response.data;
                         })

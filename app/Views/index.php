@@ -70,14 +70,14 @@
         <form @submit.prevent="fetchElementos">
             <div class="url-section">
                 <div class="url-box">
-                    <span hidden>Resource URL:</span>http://localhost:8080/
+                    <span hidden>Resource URL:</span>https://e4ac-2806-10a6-f-92a3-42d-8d90-2cef-28b8.ngrok-free.app/
                 </div>
                 <input type="text" class="url-input" v-model="url" placeholder="Introduce la URL">
                 <button type="submit">Hacer consulta</button>
             </div>
         </form>
         <div class="elementotions" v-if="elementos.length">
-            <h2>Reservaciones:</h2>
+            <h2>Elementos:</h2>
             <ul>
                 <li v-for="elemento in elementos" :key="elemento._id">
                     {{ elemento }}

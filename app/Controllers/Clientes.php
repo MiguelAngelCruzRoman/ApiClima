@@ -24,4 +24,15 @@ class Clientes extends BaseController
     public function documentacionIndex(){
         return view('clientes/index'); 
     }
+
+    public function getClienteNombre($nombre)
+    {
+        $clientes = new ClientesModel();
+        $allClientes = $clientes->getClienteNombre($nombre);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allClientes);
+        return $response;
+    }
 }

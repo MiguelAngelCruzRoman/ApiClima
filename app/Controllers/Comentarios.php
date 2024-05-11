@@ -23,4 +23,15 @@ class Comentarios extends BaseController
     public function documentacionIndex(){
         return view('comentarios/index'); 
     }
+
+    public function getComentarioCalificacion($calificacion)
+    {
+        $comentarios = new ComentariosModel();
+        $allComentarios = $comentarios->getComentarioCalificacion($calificacion);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allComentarios);
+        return $response;
+    }
 }
