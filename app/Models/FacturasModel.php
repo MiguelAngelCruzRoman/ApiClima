@@ -8,7 +8,7 @@ use MongoDB\Client as MongoDBClient;
 class FacturasModel extends Model
 {
     protected $collection;
-    
+
     public function __construct()
     {
         parent::__construct();
@@ -23,38 +23,38 @@ class FacturasModel extends Model
 
     public function getByMetodoPago($metodoPago)
     {
-        $facturas = $this->collection->find( ['metodoPago' => $metodoPago] );
+        $facturas = $this->collection->find(['metodoPago' => $metodoPago]);
         return $facturas->toArray();
     }
 
-    public function getByRangoFechasEmision($fechaInicio,$fechaFin)
+    public function getByRangoFechasEmision($fechaInicio, $fechaFin)
     {
-        $facturas = $this->collection->find(['fechaEmision' => ['$gte' => $fechaInicio,'$lte' => $fechaFin]]);        
+        $facturas = $this->collection->find(['fechaEmision' => ['$gte' => $fechaInicio, '$lte' => $fechaFin]]);
         return $facturas->toArray();
     }
 
     public function getByEstatusProximoVencimiento($estatus)
     {
-        $facturas = $this->collection->find( ['estatus' => $estatus, 'fechaVencimiento' => ['$gte' => date("Y-m-d")]] );
+        $facturas = $this->collection->find(['estatus' => $estatus, 'fechaVencimiento' => ['$gte' => date("Y-m-d")]]);
         return $facturas->toArray();
     }
 
     public function getByFechaReservacion($fecha)
-{
-    $reservacionesCollection = (new MongoDBClient('mongodb+srv://YoMero:Contrasenia.Segura.123@yomerocluster.eit2hnw.mongodb.net/?retryWrites=true&w=majority&appName=YoMeroCluster'))->apiHotel->reservaciones;
+    {
+        $reservacionesCollection = (new MongoDBClient('mongodb+srv://YoMero:Contrasenia.Segura.123@yomerocluster.eit2hnw.mongodb.net/?retryWrites=true&w=majority&appName=YoMeroCluster'))->apiHotel->reservaciones;
 
-    $reservaciones = $reservacionesCollection->find(['fechaReservacion' => $fecha]);
+        $reservaciones = $reservacionesCollection->find(['fechaReservacion' => $fecha]);
 
-    $idsReservaciones = [];
+        $idsReservaciones = [];
 
-    foreach ($reservaciones as $reservacion) {
-        $idsReservaciones[] = $reservacion['_id'];
+        foreach ($reservaciones as $reservacion) {
+            $idsReservaciones[] = $reservacion['_id'];
+        }
+
+        $facturas = $this->collection->find([
+            'id_Reservacion' => ['$in' => $idsReservaciones],
+        ]);
+
+        return $facturas->toArray();
     }
-
-    $facturas = $this->collection->find([
-        'id_Reservacion' => ['$in' => $idsReservaciones],
-    ]);
-
-    return $facturas->toArray();
-}
 }

@@ -31,6 +31,9 @@ $routes->get('/facturas/getByFechaReservacion/(:any)', 'Facturas::getByFechaRese
 $routes->get('/habitaciones', 'Habitaciones::index');
 $routes->get('/habitaciones/documentacion', 'Habitaciones::documentacionIndex');
 $routes->get('/habitaciones/getByPrecio/(:num)', 'Habitaciones::getByPrecio/$1');
+$routes->get('/habitaciones/getByServiciosExactos/(:any)', 'Habitaciones::getByServiciosExactos/$1');
+$routes->get('/habitaciones/getByServiciosSimilares/(:any)', 'Habitaciones::getByServiciosSimilares/$1'); 
+$routes->get('/habitaciones/getByDisponibilidadHotel/(:any)/(:any)', 'Habitaciones::getByDisponibilidadHotel/$1/$2'); 
 
 $routes->get('/hoteles', 'Hoteles::index');
 $routes->get('/hoteles/documentacion', 'Hoteles::documentacionIndex');

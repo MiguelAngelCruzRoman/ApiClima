@@ -53,30 +53,30 @@ class ComentariosModel extends Model
     }
 
 
-    public function getByRangoFechas($fechaInicio,$fechaFin)
+    public function getByRangoFechas($fechaInicio, $fechaFin)
     {
-        $comentarios = $this->collection->find(['fecha' => ['$gte' => $fechaInicio,'$lte' => $fechaFin]]);        
+        $comentarios = $this->collection->find(['fecha' => ['$gte' => $fechaInicio, '$lte' => $fechaFin]]);
         return $comentarios->toArray();
     }
 
     public function getByHotelCalificacion($nombreHotel, $calificacion)
-{
-    $hotelesCollection = (new MongoDBClient('mongodb+srv://YoMero:Contrasenia.Segura.123@yomerocluster.eit2hnw.mongodb.net/?retryWrites=true&w=majority&appName=YoMeroCluster'))->apiHotel->hoteles;
+    {
+        $hotelesCollection = (new MongoDBClient('mongodb+srv://YoMero:Contrasenia.Segura.123@yomerocluster.eit2hnw.mongodb.net/?retryWrites=true&w=majority&appName=YoMeroCluster'))->apiHotel->hoteles;
 
-    $hoteles = $hotelesCollection->find(['nombre' => $nombreHotel]);
+        $hoteles = $hotelesCollection->find(['nombre' => $nombreHotel]);
 
-    $idsHoteles = [];
+        $idsHoteles = [];
 
-    foreach ($hoteles as $hotel) {
-        $idsHoteles[] = $hotel['_id'];
+        foreach ($hoteles as $hotel) {
+            $idsHoteles[] = $hotel['_id'];
+        }
+
+        $comentarios = $this->collection->find([
+            'id_Hotel' => ['$in' => $idsHoteles],
+            'calificacion' => (int) $calificacion
+        ]);
+
+        return $comentarios->toArray();
     }
-
-    $comentarios = $this->collection->find([
-        'id_Hotel' => ['$in' => $idsHoteles],
-        'calificacion' => (int)$calificacion
-    ]);
-
-    return $comentarios->toArray();
-}
 
 }

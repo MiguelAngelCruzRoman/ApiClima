@@ -16,7 +16,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Xrpiuf/gVl2ASOiWfKO0sKmOQvOdII4MwObuS6xTkf4VHbFkFnXZQ+W0GJHl3gsH"
         crossorigin="anonymous"></script>
+    <script>
+        let prevScrollpos = window.pageYOffset;
 
+        window.onscroll = function () {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").classList.remove("hidden");
+            } else {
+                document.getElementById("navbar").classList.add("hidden");
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 
     <style>
         body {
@@ -26,12 +38,9 @@
 
         .sidebar {
             position: fixed;
-            top: 70px;
             left: 0;
             width: 300px;
             height: 700px;
-            background-color: #f8f9fa;
-            padding: 20px;
             overflow-y: auto;
             z-index: 1;
         }
@@ -43,6 +52,20 @@
 
         .nav-link.active {
             font-weight: bold;
+        }
+
+        #navbar.hidden {
+            top: -100px;
+        }
+
+        #navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: top 0.3s;
         }
 
         .sub-item {
@@ -79,7 +102,7 @@
             padding: 5px;
         }
     </style>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="\logoEmpresa.png" alt="" height="50px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -229,6 +252,21 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#habitaciones-getByPrecio"
                                             style="color:#000000">getByPrecio<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#habitaciones-getByServiciosExactos"
+                                            style="color:#000000">getByServiciosExactos<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#habitaciones-getByServiciosSimilares"
+                                            style="color:#000000">getByServiciosSimilares<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#habitaciones-getByDisponibilidadHotel"
+                                            style="color:#000000">getByDisponibilidadHotel<span
                                                 style="color:#9b9b9b">(endpoint)</span></a>
                                     </li>
                                 </ul>
@@ -961,7 +999,7 @@
                                 <tr>
                                     <th scope="row" colspan="2">vista</th>
                                     <td>String</td>
-                                    <td>7493821328</td>
+                                    <td>Directo al mar</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" colspan="2">serviciosIncluidos</th>
@@ -1007,7 +1045,7 @@
                         <p><strong>Condiciones necesarias:</strong></p>
                         <ul>
                             <li>
-                                <p>Se tiene que sustituir "preci" por la cantidad (numérica) que se requiera</p>
+                                <p>Se tiene que sustituir "{precio}" por la cantidad (numérica) que se requiera</p>
                             </li>
                         </ul>
                         <p><strong>Resultado de ejemplo de consulta:</strong></p>
@@ -1018,6 +1056,70 @@
                             style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ habitacionesGetByPrecio }}</code></pre>
                     </div>
 
+                    <div class="separator_empty"></div>
+
+                    <div id="habitaciones-getByServiciosExactos">
+                        <h3>getByServiciosExactos<span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/habitaciones/getByServiciosExactos/{servicios}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de habitaciones que
+                            coincidan textualmente con todos los servicios que se incluyeron en la consulta</p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{servicios}" por una lista de los servicios que se requiera,
+                                    separándolos po comas (,). Ejmplo "Tele,bufet,cocina"</p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/habitaciones/getByServiciosExactos/dolor,neque</code>
+                        </p>
+                        <pre v-if="habitacionesGetByServiciosExactos.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ habitacionesGetByServiciosExactos }}</code></pre>
+                    </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="habitaciones-getByServiciosSimilares">
+                        <h3>getByServiciosSimilares<span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/habitaciones/getByServiciosSimilares/{servicios}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de habitaciones que
+                            coincidan con almenos uno de todos los servicios que se incluyeron en la consulta</p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{servicios}" por una lista de los servicios que se requiera,
+                                    separándolos po comas (,). Ejmplo "Tele,bufet,cocina"</p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/habitaciones/getByServiciosSimilares/dolor,neque</code>
+                        </p>
+                        <pre v-if="habitacionesGetByServiciosSimilares.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ habitacionesGetByServiciosSimilares }}</code></pre>
+                    </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="habitaciones-getByDisponibilidadHotel">
+                        <h3>getByDisponibilidadHotel<span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/habitaciones/getByDisponibilidadHotel/{disponibilidad}/{nombreHotel}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de habitaciones que
+                            coincidan (exactamente) con el nombre del hotel y el estatus (ocupado o desocupado) de las habitaciones de dicho hotel</p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{disponibilidad}" por el número "0" en caso de que se busquen las habitaciones ocupadas o colocar cualquier otro valor en caso de que se busquen las habitaciones disponibles</p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/habitaciones/getByDisponibilidadHotel/1/Melgar-G%C3%A1lvez%20S.A.%20de%20C.V.</code>
+                        </p>
+                        <pre v-if="habitacionesGetByDisponibilidadHotel.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ habitacionesGetByDisponibilidadHotel }}</code></pre>
+                    </div>
 
 
 
@@ -1355,6 +1457,9 @@
                             facturasGetByFechaReservacion: [],
                             habitaciones: [],
                             habitacionesGetByPrecio: [],
+                            habitacionesGetByServiciosExactos: [],
+                            habitacionesGetByServiciosSimilares: [],
+                            habitacionesGetByDisponibilidadHotel: [],
                             hoteles: [],
                             hotelesGetByCiudad: [],
                             reservaciones: [],
@@ -1497,6 +1602,30 @@
                                     .catch(error => {
                                         console.error('Error al obtener las habitaciones:', error);
                                     });
+                            }, fetchHabitacionesGetByServiciosExactos() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/habitaciones/getByServiciosExactos/dolor,neque')
+                                    .then(response => {
+                                        this.habitacionesGetByServiciosExactos = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener las habitaciones:', error);
+                                    });
+                            }, fetchHabitacionesGetByServiciosSimilares() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/habitaciones/getByServiciosSimilares/dolor,neque')
+                                    .then(response => {
+                                        this.habitacionesGetByServiciosSimilares = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener las habitaciones:', error);
+                                    });
+                            }, fetchHabitacionesGetByDisponibilidadHotel() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/habitaciones/getByDisponibilidadHotel/1/Melgar-G%C3%A1lvez%20S.A.%20de%20C.V.')
+                                    .then(response => {
+                                        this.habitacionesGetByDisponibilidadHotel = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener las habitaciones:', error);
+                                    });
                             }, fetchHoteles() {
                                 axios.get('https://sailfish-master-goose.ngrok-free.app/hoteles')
                                     .then(response => {
@@ -1566,6 +1695,12 @@
                                 return JSON.stringify(this.habitaciones, null, 1);
                             }, formattedHabitacionesGetByPrecio() {
                                 return JSON.stringify(this.habitacionesGetByPrecio, null, 1);
+                            }, formattedHabitacionesGetByServiciosExactos() {
+                                return JSON.stringify(this.habitacionesGetByServiciosExactos, null, 1);
+                            }, formattedHabitacionesGetByServiciosSimilares() {
+                                return JSON.stringify(this.habitacionesGetByServiciosSimilares, null, 1);
+                            }, formattedHabitacionesGetByDisponibilidadHotel() {
+                                return JSON.stringify(this.habitacionesGetByDisponibilidadHotel, null, 1);
                             }, formattedHoteles() {
                                 return JSON.stringify(this.hoteles, null, 1);
                             }, formattedHotelesGetByCiudad() {
@@ -1594,6 +1729,9 @@
                             this.fetchFacturasGetByFechaReservacion();
                             this.fetchHabitaciones();
                             this.fetchHabitacionesGetByPrecio();
+                            this.fetchHabitacionesGetByServiciosExactos();
+                            this.fetchHabitacionesGetByServiciosSimilares();
+                            this.fetchHabitacionesGetByDisponibilidadHotel();
                             this.fetchHoteles();
                             this.fetchHotelesGetByCiudad();
                             this.fetchReservaciones();

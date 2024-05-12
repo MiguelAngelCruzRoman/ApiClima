@@ -103,3 +103,13 @@ in APPPATH\Models\ComentariosModel.php on line 79.
  4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-12 16:35:31 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Models\HabitacionesModel.php on line 66.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\app\\Models\\HabitacionesModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\HabitacionesModel')
+ 3 APPPATH\Controllers\Habitaciones.php(62): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\HabitacionesModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Habitaciones->getByDisponibilidadHotel('true', 'Montoya, Esquibel y Malave')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Habitaciones))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')

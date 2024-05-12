@@ -20,14 +20,48 @@ class Habitaciones extends BaseController
         $response->setJSON($allHabitaciones);
         return $response;
     }
-    public function documentacionIndex(){
-        return view('habitaciones/index'); 
+    public function documentacionIndex()
+    {
+        return view('habitaciones/index');
     }
 
     public function getByPrecio($precio)
     {
         $habitaciones = new HabitacionesModel();
         $allHabitaciones = $habitaciones->getByPrecio($precio);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allHabitaciones);
+        return $response;
+    }
+
+    public function getByServiciosExactos($servicios)
+    {
+        $habitaciones = new HabitacionesModel();
+        $allHabitaciones = $habitaciones->getByServiciosExactos($servicios);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allHabitaciones);
+        return $response;
+    }
+
+    public function getByServiciosSimilares($servicios)
+    {
+        $habitaciones = new HabitacionesModel();
+        $allHabitaciones = $habitaciones->getByServiciosSimilares($servicios);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allHabitaciones);
+        return $response;
+    }
+
+    public function getByDisponibilidadHotel($disponibilidad, $nombreHotel)
+    {
+        $habitaciones = new HabitacionesModel();
+        $allHabitaciones = $habitaciones->getByDisponibilidadHotel($disponibilidad, $nombreHotel);
 
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
