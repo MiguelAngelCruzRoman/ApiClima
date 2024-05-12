@@ -167,6 +167,21 @@
                                             style="color:#000000">getByCalificacion<span
                                                 style="color:#9b9b9b">(endpoint)</span></a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#comentarios-getByRangoFechas"
+                                            style="color:#000000">getByRangoFechas<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#comentarios-getByCliente"
+                                            style="color:#000000">getByCliente<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#comentarios-getByHotelCalificacion"
+                                            style="color:#000000">getByHotelCalificacion<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
                                 </ul>
                             </li>
 
@@ -594,6 +609,72 @@
                         </p>
                         <pre v-if="comentariosGetByCalificacion.length"
                             style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ comentariosGetByCalificacion }}</code></pre>
+                    </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="comentarios-getByRangoFechas">
+                        <h3>getByRangoFechas<span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/comentarios/getByRangoFechas/{fechaInicio}/{fechaFin}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de comentarios que se hayan realizado dentro de una fecha establecida</p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{fechaInicio}" por la fecha menor del rango, siguiendo el formato de "año-mes-dia"</p>
+                            </li>
+                            <li>
+                                <p>Se tiene que sustituir "{fechaFin}" por la fecha mayor del rango, siguiendo el formato de "año-mes-dia"</p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/comentarios/getByRangoFechas/2024-01-1/2024-12-12</code>
+                        </p>
+                        <pre v-if="comentariosGetByRangoFechas.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ comentariosGetByRangoFechas }}</code></pre>
+                    </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="comentarios-getByCliente">
+                        <h3>getByCliente<span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/comentarios/getByCliente/{nombreCliente}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de comentarios que se hayan realizado por los clientes cuyo primer nombre, segundo nombre, apellido paterno o apellido materno sea exactamente igual al dato que se busque</p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{nombreCliente}" por el primer nombre, segundo nombre, apellido paterno o apellido materno que se requiera buscar</p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/comentarios/getByCliente/Aldo</code>
+                        </p>
+                        <pre v-if="comentariosGetByCliente.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ comentariosGetByCliente }}</code></pre>
+                    </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="comentarios-getByHotelCalificacion">
+                        <h3>getByHotelCalificacion<span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/comentarios/getByHotelCalificacion/{nombreHotel}/{calificacion}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de comentarios que tengan una calificación determinada para el nombre de un  hotel en específico</p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{nombreHotel}" por el nombre del hotel que se esté buscando (Armendáriz y Rivera e Hijos, Herrera-Negrete A.C., etc)</p>
+                            </li>
+                            <li>
+                                <p>Se tiene que sustituir "{calificacion}" por la cantidad de estrellas (1-5) que se asignó al hotel en el comentario </p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/comentarios/getByHotelCalificacion/Melgar-Gálvez S.A. de C.V./2</code>
+                        </p>
+                        <pre v-if="comentariosGetByHotelCalificacion.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ comentariosGetByHotelCalificacion }}</code></pre>
                     </div>
 
 
@@ -1138,6 +1219,9 @@
                             clientesGetByTipoTarjetaBanco: [],
                             comentarios: [],
                             comentariosGetByCalificacion: [],
+                            comentariosGetByRangoFechas: [],
+                            comentariosGetByCliente: [],
+                            comentariosGetByHotelCalificacion: [],
                             facturas: [],
                             facturasGetByMetodoPago: [],
                             habitaciones: [],
@@ -1200,6 +1284,30 @@
                                 axios.get('https://sailfish-master-goose.ngrok-free.app/comentarios/getByCalificacion/2')
                                     .then(response => {
                                         this.comentariosGetByCalificacion = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener los comentarios:', error);
+                                    });
+                            }, fetchComentariosGetByRangoFechas() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/comentarios/getByRangoFechas/2024-01-1/2024-12-12')
+                                    .then(response => {
+                                        this.comentariosGetByRangoFechas = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener los comentarios:', error);
+                                    });
+                            }, fetchComentariosGetByCliente() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/comentarios/getByCliente/Aldo')
+                                    .then(response => {
+                                        this.comentariosGetByCliente = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener los comentarios:', error);
+                                    });
+                            }, fetchComentariosGetByHotelCalificacion() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/comentarios/getByHotelCalificacion/Melgar-G%C3%A1lvez%20S.A.%20de%20C.V./2')
+                                    .then(response => {
+                                        this.comentariosGetByHotelCalificacion = response.data;
                                     })
                                     .catch(error => {
                                         console.error('Error al obtener los comentarios:', error);
@@ -1287,6 +1395,12 @@
                                 return JSON.stringify(this.comentarios, null, 1);
                             }, formattedComentariosGetByCalificacion() {
                                 return JSON.stringify(this.comentariosGetByCalificacion, null, 1);
+                            }, formattedComentariosGetByRangoFechas() {
+                                return JSON.stringify(this.comentariosGetByRangoFechas, null, 1);
+                            }, formattedComentariosGetByCliente() {
+                                return JSON.stringify(this.comentariosGetByCliente, null, 1);
+                            }, formattedComentariosGetByHotelCalificacion() {
+                                return JSON.stringify(this.comentariosGetByHotelCalificacion, null, 1);
                             }, formattedFacturas() {
                                 return JSON.stringify(this.facturas, null, 1);
                             }, formattedFacturasGetByMetodoPago() {
@@ -1313,6 +1427,9 @@
                             this.fetchClientesGetByTipoTarjetaBanco();
                             this.fetchComentarios();
                             this.fetchComentariosGetByCalificacion();
+                            this.fetchComentariosGetByRangoFechas();
+                            this.fetchComentariosGetByCliente();
+                            this.fetchComentariosGetByHotelCalificacion();
                             this.fetchFacturas();
                             this.fetchFacturasGetByMetodoPago();
                             this.fetchHabitaciones();

@@ -34,4 +34,38 @@ class Comentarios extends BaseController
         $response->setJSON($allComentarios);
         return $response;
     }
+
+
+    public function getByCliente($nombreCliente)
+    {
+        $comentarios = new ComentariosModel();
+        $allComentarios = $comentarios->getByCliente($nombreCliente);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allComentarios);
+        return $response;
+    }
+
+    public function getByRangoFechas($fechaInicio, $fechaFin)
+    {
+        $comentarios = new ComentariosModel();
+        $allComentarios = $comentarios->getByRangoFechas($fechaInicio,$fechaFin);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allComentarios);
+        return $response;
+    }
+
+    public function getByHotelCalificacion($nombreHotel, $calificacion)
+    {
+        $comentarios = new ComentariosModel();
+        $allComentarios = $comentarios->getByHotelCalificacion($nombreHotel,$calificacion);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allComentarios);
+        return $response;
+    }
 }

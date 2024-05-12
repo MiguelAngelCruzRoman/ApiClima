@@ -17,6 +17,9 @@ $routes->get('/clientes/getByTipoTarjetaBanco/(:any)/(:any)', 'Clientes::getByTi
 $routes->get('/comentarios', 'Comentarios::index');
 $routes->get('/comentarios/documentacion', 'Comentarios::documentacionIndex');
 $routes->get('/comentarios/getByCalificacion/(:num)', 'Comentarios::getByCalificacion/$1');
+$routes->get('/comentarios/getByRangoFechas/(:any)/(:any)', 'Comentarios::getByRangoFechas/$1/$2');
+$routes->get('/comentarios/getByCliente/(:any)', 'Comentarios::getByCliente/$1'); 
+$routes->get('/comentarios/getByHotelCalificacion/(:any)/(:num)', 'Comentarios::getByHotelCalificacion/$1/$2'); 
 
 $routes->get('/facturas', 'Facturas::index');
 $routes->get('/facturas/documentacion', 'Facturas::documentacionIndex');
