@@ -34,4 +34,37 @@ class Facturas extends BaseController
         $response->setJSON($allFacturas);
         return $response;
     }
+
+    public function getByRangoFechasEmision($fechaInicio, $fechaFin)
+    {
+        $facturas = new FacturasModel();
+        $allFacturas = $facturas->getByRangoFechasEmision($fechaInicio,$fechaFin);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allFacturas);
+        return $response;
+    }
+
+    public function getByEstatusProximoVencimiento($estatus)
+    {
+        $facturas = new FacturasModel();
+        $allFacturas = $facturas->getByEstatusProximoVencimiento($estatus);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allFacturas);
+        return $response;
+    }
+
+    public function getByFechaReservacion($fecha)
+    {
+        $facturas = new FacturasModel();
+        $allFacturas = $facturas->getByFechaReservacion($fecha);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allFacturas);
+        return $response;
+    }
 }

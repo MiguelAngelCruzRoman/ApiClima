@@ -24,6 +24,9 @@ $routes->get('/comentarios/getByHotelCalificacion/(:any)/(:num)', 'Comentarios::
 $routes->get('/facturas', 'Facturas::index');
 $routes->get('/facturas/documentacion', 'Facturas::documentacionIndex');
 $routes->get('/facturas/getByMetodoPago/(:any)', 'Facturas::getByMetodoPago/$1');
+$routes->get('/facturas/getByRangoFechasEmision/(:any)/(:any)', 'Facturas::getByRangoFechasEmision/$1/$2');
+$routes->get('/facturas/getByEstatusProximoVencimiento/(:any)', 'Facturas::getByEstatusProximoVencimiento/$1');
+$routes->get('/facturas/getByFechaReservacion/(:any)', 'Facturas::getByFechaReservacion/$1');
 
 $routes->get('/habitaciones', 'Habitaciones::index');
 $routes->get('/habitaciones/documentacion', 'Habitaciones::documentacionIndex');

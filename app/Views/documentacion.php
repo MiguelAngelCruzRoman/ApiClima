@@ -199,6 +199,21 @@
                                             style="color:#000000">getByMetodoPago<span
                                                 style="color:#9b9b9b">(endpoint)</span></a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#facturas-getByRangoFechasEmision"
+                                            style="color:#000000">getByRangoFechasEmision<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#facturas-getByEstatusProximoVencimiento"
+                                            style="color:#000000">getByEstatusProximoVencimiento<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#facturas-getByFechaReservacion"
+                                            style="color:#000000">getByFechaReservacion<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
                                 </ul>
                             </li>
 
@@ -450,7 +465,8 @@
                         <p><strong>Condiciones necesarias:</strong></p>
                         <ul>
                             <li>
-                                <p>Se tiene que sustituir "{pais}" por el nombre del país que tienen los clientes que se buscan</p>
+                                <p>Se tiene que sustituir "{pais}" por el nombre del país que tienen los clientes que se
+                                    buscan</p>
                             </li>
                         </ul>
                         <p><strong>Resultado de ejemplo de consulta:</strong></p>
@@ -466,14 +482,17 @@
                     <div id="clientes-getByDocumentoIdentidadValido">
                         <h3>getByDocumentoIdentidadValido<span style="color:#9b9b9b">(endpoint)</span></h3>
                         <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/clientes/getByDocumentoIdentidadValido/{tipoDocumento}</p></code>
-                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de clientes que tengan un documento de identidad válido (con fecha menor a la actual)</p>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de clientes que
+                            tengan un documento de identidad válido (con fecha menor a la actual)</p>
                         <p><strong>Condiciones necesarias:</strong></p>
                         <ul>
                             <li>
-                                <p>Se tiene que sustituir "{tipoDocumento}" por la clase de documento que se requiera (DNI, Pasaporte, Visa, etc)</p>
+                                <p>Se tiene que sustituir "{tipoDocumento}" por la clase de documento que se requiera
+                                    (DNI, Pasaporte, Visa, etc)</p>
                             </li>
                             <li>
-                                <p>La fecha se compara respecto a la del sistema operativo, por lo que no es necesario ingresarla</p>
+                                <p>La fecha se compara respecto a la del sistema operativo, por lo que no es necesario
+                                    ingresarla</p>
                             </li>
                         </ul>
                         <p><strong>Resultado de ejemplo de consulta:</strong></p>
@@ -489,17 +508,21 @@
                     <div id="clientes-getByTipoTarjetaBanco">
                         <h3>getByTipoTarjetaBanco<span style="color:#9b9b9b">(endpoint)</span></h3>
                         <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/clientes/getByTipoTarjetaBanco/{tipoTarjeta}/{banco}</p></code>
-                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de clientes que tengan una tarjeta de crédito de un banco y un tipo de tarjeta en particular</p>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de clientes que
+                            tengan una tarjeta de crédito de un banco y un tipo de tarjeta en particular</p>
                         <p><strong>Condiciones necesarias:</strong></p>
                         <ul>
                             <li>
-                                <p>Se tiene que sustituir "{tipoTarjeta}" por la clase de tarjeta que se requiera (Visa, MasterCard, American Express, etc.)</p>
+                                <p>Se tiene que sustituir "{tipoTarjeta}" por la clase de tarjeta que se requiera (Visa,
+                                    MasterCard, American Express, etc.)</p>
                             </li>
                             <li>
-                                <p>Se tiene que sustituir "{banco}" por el nombre del banco que se requiera (BBVA, HSBC, Banco Santander,etc.)</p>
+                                <p>Se tiene que sustituir "{banco}" por el nombre del banco que se requiera (BBVA, HSBC,
+                                    Banco Santander,etc.)</p>
                             </li>
                             <li>
-                                <p>La fecha se compara respecto a la del sistema operativo, por lo que no es necesario ingresarla</p>
+                                <p>La fecha se compara respecto a la del sistema operativo, por lo que no es necesario
+                                    ingresarla</p>
                             </li>
                         </ul>
                         <p><strong>Resultado de ejemplo de consulta:</strong></p>
@@ -509,6 +532,10 @@
                         <pre v-if="clientesGetByTipoTarjetaBanco.length"
                             style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ clientesGetByTipoTarjetaBanco }}</code></pre>
                     </div>
+
+
+
+
 
 
                     <div class="separator"></div>
@@ -616,14 +643,17 @@
                     <div id="comentarios-getByRangoFechas">
                         <h3>getByRangoFechas<span style="color:#9b9b9b">(endpoint)</span></h3>
                         <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/comentarios/getByRangoFechas/{fechaInicio}/{fechaFin}</p></code>
-                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de comentarios que se hayan realizado dentro de una fecha establecida</p>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de comentarios que
+                            se hayan realizado dentro de una fecha establecida</p>
                         <p><strong>Condiciones necesarias:</strong></p>
                         <ul>
                             <li>
-                                <p>Se tiene que sustituir "{fechaInicio}" por la fecha menor del rango, siguiendo el formato de "año-mes-dia"</p>
+                                <p>Se tiene que sustituir "{fechaInicio}" por la fecha menor del rango, siguiendo el
+                                    formato de "año-mes-día"</p>
                             </li>
                             <li>
-                                <p>Se tiene que sustituir "{fechaFin}" por la fecha mayor del rango, siguiendo el formato de "año-mes-dia"</p>
+                                <p>Se tiene que sustituir "{fechaFin}" por la fecha mayor del rango, siguiendo el
+                                    formato de "año-mes-día"</p>
                             </li>
                         </ul>
                         <p><strong>Resultado de ejemplo de consulta:</strong></p>
@@ -639,11 +669,14 @@
                     <div id="comentarios-getByCliente">
                         <h3>getByCliente<span style="color:#9b9b9b">(endpoint)</span></h3>
                         <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/comentarios/getByCliente/{nombreCliente}</p></code>
-                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de comentarios que se hayan realizado por los clientes cuyo primer nombre, segundo nombre, apellido paterno o apellido materno sea exactamente igual al dato que se busque</p>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de comentarios que
+                            se hayan realizado por los clientes cuyo primer nombre, segundo nombre, apellido paterno o
+                            apellido materno sea exactamente igual al dato que se busque</p>
                         <p><strong>Condiciones necesarias:</strong></p>
                         <ul>
                             <li>
-                                <p>Se tiene que sustituir "{nombreCliente}" por el primer nombre, segundo nombre, apellido paterno o apellido materno que se requiera buscar</p>
+                                <p>Se tiene que sustituir "{nombreCliente}" por el primer nombre, segundo nombre,
+                                    apellido paterno o apellido materno que se requiera buscar</p>
                             </li>
                         </ul>
                         <p><strong>Resultado de ejemplo de consulta:</strong></p>
@@ -659,14 +692,17 @@
                     <div id="comentarios-getByHotelCalificacion">
                         <h3>getByHotelCalificacion<span style="color:#9b9b9b">(endpoint)</span></h3>
                         <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/comentarios/getByHotelCalificacion/{nombreHotel}/{calificacion}</p></code>
-                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de comentarios que tengan una calificación determinada para el nombre de un  hotel en específico</p>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de comentarios que
+                            tengan una calificación determinada para el nombre de un hotel en específico</p>
                         <p><strong>Condiciones necesarias:</strong></p>
                         <ul>
                             <li>
-                                <p>Se tiene que sustituir "{nombreHotel}" por el nombre del hotel que se esté buscando (Armendáriz y Rivera e Hijos, Herrera-Negrete A.C., etc)</p>
+                                <p>Se tiene que sustituir "{nombreHotel}" por el nombre del hotel que se esté buscando
+                                    (Armendáriz y Rivera e Hijos, Herrera-Negrete A.C., etc)</p>
                             </li>
                             <li>
-                                <p>Se tiene que sustituir "{calificacion}" por la cantidad de estrellas (1-5) que se asignó al hotel en el comentario </p>
+                                <p>Se tiene que sustituir "{calificacion}" por la cantidad de estrellas (1-5) que se
+                                    asignó al hotel en el comentario </p>
                             </li>
                         </ul>
                         <p><strong>Resultado de ejemplo de consulta:</strong></p>
@@ -676,6 +712,11 @@
                         <pre v-if="comentariosGetByHotelCalificacion.length"
                             style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ comentariosGetByHotelCalificacion }}</code></pre>
                     </div>
+
+
+
+
+
 
 
                     <div class="separator"></div>
@@ -782,6 +823,83 @@
                         <pre v-if="facturasGetByMetodoPago.length"
                             style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ facturasGetByMetodoPago }}</code></pre>
                     </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="facturas-getByRangoFechasEmision">
+                        <h3>getByRangoFechasEmision<span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/facturas/getByRangoFechasEmision/{fechaInicio}/{fechaFin}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de facturas que se
+                            hayan emitido en un rango de fechas determinado</p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{fechaInicio}" la fecha menor con la que se quiera comparar
+                                    (con formato de "año-mes-día")</p>
+                            </li>
+                            <li>
+                                <p>Se tiene que sustituir "{fechaFin}" la fecha mayor con la que se quiera comparar (con
+                                    formato de "año-mes-día")</p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/facturas/getByRangoFechasEmision/2023-01-01/2024-12-12</code>
+                        </p>
+                        <pre v-if="facturasGetByRangoFechasEmision.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ facturasGetByRangoFechasEmision }}</code></pre>
+                    </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="facturas-getByEstatusProximoVencimiento">
+                        <h3>getByEstatusProximoVencimiento<span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/facturas/getByEstatusProximoVencimiento/{estatus}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de facturas que
+                            tengan el estatus especificado y que su fecha de vencimiento esté próxima a cumplirse</p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{estatus}" por el estado en el que se encuentre la factura
+                                    (Pagada, Cancelada, etc)</p>
+                            </li>
+                            <li>
+                                <p>No es necesario ingresar fechas, puesto que se compara respecto a la hora que tenga
+                                    el sistema operativo </p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/facturas/getByEstatusProximoVencimiento/Pagada</code>
+                        </p>
+                        <pre v-if="facturasGetByEstatusProximoVencimiento.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ facturasGetByEstatusProximoVencimiento }}</code></pre>
+                    </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="facturas-getByFechaReservacion">
+                        <h3>getByFechaReservacion<span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/facturas/getByFechaReservacion/{fecha}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de facturas que
+                            pertenezcan a una reservación que se haya realizado en una fecha específica</p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{fecha}" por la que corresponda a la fecha en la que se
+                                    realizó una reservación (con el formato de "año-mes-día")</p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/facturas/getByFechaReservacion/2021-07-25</code>
+                        </p>
+                        <pre v-if="facturasGetByFechaReservacion.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ facturasGetByFechaReservacion }}</code></pre>
+                    </div>
+
+
+
 
 
                     <div class="separator"></div>
@@ -899,6 +1017,10 @@
                         <pre v-if="habitacionesGetByPrecio.length"
                             style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ habitacionesGetByPrecio }}</code></pre>
                     </div>
+
+
+
+
 
 
                     <div class="separator"></div>
@@ -1054,6 +1176,10 @@
                         <pre v-if="hotelesGetByCiudad.length"
                             style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ hotelesGetByCiudad }}</code></pre>
                     </div>
+
+
+
+
 
 
                     <div class="separator"></div>
@@ -1224,6 +1350,9 @@
                             comentariosGetByHotelCalificacion: [],
                             facturas: [],
                             facturasGetByMetodoPago: [],
+                            facturasGetByRangoFechasEmision: [],
+                            facturasGetByEstatusProximoVencimiento: [],
+                            facturasGetByFechaReservacion: [],
                             habitaciones: [],
                             habitacionesGetByPrecio: [],
                             hoteles: [],
@@ -1264,7 +1393,7 @@
                                     .catch(error => {
                                         console.error('Error al obtener los clientes:', error);
                                     });
-                            },fetchClientesGetByTipoTarjetaBanco() {
+                            }, fetchClientesGetByTipoTarjetaBanco() {
                                 axios.get('https://sailfish-master-goose.ngrok-free.app/clientes/getByTipoTarjetaBanco/MasterCard/BBVA')
                                     .then(response => {
                                         this.clientesGetByTipoTarjetaBanco = response.data;
@@ -1328,8 +1457,31 @@
                                     .catch(error => {
                                         console.error('Error al obtener las facturas:', error);
                                     });
-                            },
-                            fetchHabitaciones() {
+                            }, fetchFacturasGetByRangoFechasEmision() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/facturas/getByRangoFechasEmision/2023-01-01/2024-12-12')
+                                    .then(response => {
+                                        this.facturasGetByRangoFechasEmision = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener las facturas:', error);
+                                    });
+                            }, fetchFacturasGetByEstatusProximoVencimiento() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/facturas/getByEstatusProximoVencimiento/Pagada')
+                                    .then(response => {
+                                        this.facturasGetByEstatusProximoVencimiento = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener las facturas:', error);
+                                    });
+                            }, fetchFacturasGetByFechaReservacion() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/facturas/getByFechaReservacion/2021-07-25')
+                                    .then(response => {
+                                        this.facturasGetByFechaReservacion = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener las facturas:', error);
+                                    });
+                            }, fetchHabitaciones() {
                                 axios.get('https://sailfish-master-goose.ngrok-free.app/habitaciones')
                                     .then(response => {
                                         this.habitaciones = response.data;
@@ -1337,8 +1489,7 @@
                                     .catch(error => {
                                         console.error('Error al obtener las habitaciones:', error);
                                     });
-                            },
-                            fetchHabitacionesGetByPrecio() {
+                            }, fetchHabitacionesGetByPrecio() {
                                 axios.get('https://sailfish-master-goose.ngrok-free.app/habitaciones/getByPrecio/2544')
                                     .then(response => {
                                         this.habitacionesGetByPrecio = response.data;
@@ -1405,6 +1556,12 @@
                                 return JSON.stringify(this.facturas, null, 1);
                             }, formattedFacturasGetByMetodoPago() {
                                 return JSON.stringify(this.facturasGetByMetodoPago, null, 1);
+                            }, formattedFacturasGetByRangoFechasEmision() {
+                                return JSON.stringify(this.facturasGetByRangoFechasEmision, null, 1);
+                            }, formattedFacturasGetByEstatusProximoVencimiento() {
+                                return JSON.stringify(this.facturasGetByEstatusProximoVencimiento, null, 1);
+                            }, formattedFacturasGetByFechaReservacion() {
+                                return JSON.stringify(this.facturasGetByFechaReservacion, null, 1);
                             }, formattedHabitaciones() {
                                 return JSON.stringify(this.habitaciones, null, 1);
                             }, formattedHabitacionesGetByPrecio() {
@@ -1432,6 +1589,9 @@
                             this.fetchComentariosGetByHotelCalificacion();
                             this.fetchFacturas();
                             this.fetchFacturasGetByMetodoPago();
+                            this.fetchFacturasGetByRangoFechasEmision();
+                            this.fetchFacturasGetByEstatusProximoVencimiento();
+                            this.fetchFacturasGetByFechaReservacion();
                             this.fetchHabitaciones();
                             this.fetchHabitacionesGetByPrecio();
                             this.fetchHoteles();
