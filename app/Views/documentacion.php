@@ -285,6 +285,21 @@
                                             style="color:#000000">getByCiudad<span
                                                 style="color:#9b9b9b">(endpoint)</span></a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#hoteles-getByTipoCategoria"
+                                            style="color:#000000">getByTipoCategoria<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#hoteles-getByAmenidades"
+                                            style="color:#000000">getByAmenidades<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#hoteles-getByRangoHoraCheck"
+                                            style="color:#000000">getByRangoHoraCheck<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
                                 </ul>
                             </li>
 
@@ -408,7 +423,7 @@
                                     <td>7493821328</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" rowspan="3">documentoIdentidad</th>
+                                    <th scope="row" rowspan="3" style="vertical-align:middle;">documentoIdentidad</th>
                                     <th scope="row">tipoDocumento</th>
                                     <td>String</td>
                                     <td>Pasaporte</td>
@@ -424,7 +439,7 @@
                                     <td>2030-03-18</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" rowspan="3">tarjetaCredito</th>
+                                    <th scope="row" rowspan="3" style="vertical-align:middle;">tarjetaCredito</th>
                                     <th scope="row">tipo</th>
                                     <td>String</td>
                                     <td>MasterCard</td>
@@ -1106,11 +1121,14 @@
                         <h3>getByDisponibilidadHotel<span style="color:#9b9b9b">(endpoint)</span></h3>
                         <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/habitaciones/getByDisponibilidadHotel/{disponibilidad}/{nombreHotel}</p></code>
                         <p>Esta petición devuelve todos los documentos que se tienen en la colección de habitaciones que
-                            coincidan (exactamente) con el nombre del hotel y el estatus (ocupado o desocupado) de las habitaciones de dicho hotel</p>
+                            coincidan (exactamente) con el nombre del hotel y el estatus (ocupado o desocupado) de las
+                            habitaciones de dicho hotel</p>
                         <p><strong>Condiciones necesarias:</strong></p>
                         <ul>
                             <li>
-                                <p>Se tiene que sustituir "{disponibilidad}" por el número "0" en caso de que se busquen las habitaciones ocupadas o colocar cualquier otro valor en caso de que se busquen las habitaciones disponibles</p>
+                                <p>Se tiene que sustituir "{disponibilidad}" por el número "0" en caso de que se busquen
+                                    las habitaciones ocupadas o colocar cualquier otro valor en caso de que se busquen
+                                    las habitaciones disponibles</p>
                             </li>
                         </ul>
                         <p><strong>Resultado de ejemplo de consulta:</strong></p>
@@ -1157,7 +1175,7 @@
                                     <td>Melgar-Gálvez S.A. de C.V.</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" rowspan="8">ubicacion</th>
+                                    <th scope="row" rowspan="8" style="vertical-align:middle;">ubicacion</th>
                                     <th scope="row">pais</th>
                                     <td>String</td>
                                     <td>Malasia</td>
@@ -1198,6 +1216,11 @@
                                     <th scope="row">longitud</th>
                                     <td>Number</td>
                                     <td>-154.09112417359933</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" colspan="2">categoria</th>
+                                    <td>Number</td>
+                                    <td>4</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" colspan="2">tipo</th>
@@ -1279,6 +1302,90 @@
                             style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ hotelesGetByCiudad }}</code></pre>
                     </div>
 
+                    <div class="separator_empty"></div>
+
+                    <div id="hoteles-getByTipoCategoria">
+                        <h3>getByTipoCategoria<span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/hoteles/getByTipoCategoria/{tipoHotel}/{categoriaHotel}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de hoteles que
+                            esten ponderados con una determinada calificación (categoría) en el tipo de hotel al que
+                            pertenezcan</p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{tipoHotel}" por la clase que se requiera (Hotel, Motel,
+                                    Hostal, etc)
+                                </p>
+                            </li>
+                            <li>
+                                <p>Se tiene que sustituir "{categoriaHotel}" por el número de estrellas con las que está
+                                    calificado el hotel (1,2,3,4,5)
+                                </p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/hoteles/getByTipoCategoria/Resort/5</code>
+                        </p>
+                        <pre v-if="hotelesGetByTipoCategoria.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ hotelesGetByTipoCategoria }}</code></pre>
+                    </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="hoteles-getByAmenidades">
+                        <h3>getByAmenidades<span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/hoteles/getByAmenidades/{amenidades}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de hoteles que
+                            incluyan almenos una de la lsita de amenidades que se está buscando</p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{amenidades}" por una lista de valores separados por comas.
+                                    Ejemplo: "bar, salón, tour"
+                                </p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/hoteles/getByAmenidades/delectus</code>
+                        </p>
+                        <pre v-if="hotelesGetByAmenidades.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ hotelesGetByAmenidades }}</code></pre>
+                    </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="hoteles-getByRangoHoraCheck">
+                        <h3>getByRangoHoraCheck<span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/hoteles/getByRangoHoraCheck/{tipoCheck}/{horaInicio}/{horaFin}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de hoteles que se
+                            encuentren dentro del rango de horas para hacer el Check-in/Check-out</p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{tipoCheck}" por "0" en caso que se requiera buscar por
+                                    "Check-out" o colocar cualquier otro valor para buscar por "Check-in"
+                                </p>
+                            </li>
+                            <li>
+                                <p>Se tiene que sustituir "{horaInicio}" por la hora menor para el rango de horas.
+                                    Utiliza el formato de "HH:mm:ss", pero se puede dejar como "HH:mm"
+                                </p>
+                            </li>
+                            <li>
+                                <p>Se tiene que sustituir "{horaFin}" por la hora mayor para el rango de horas. Utiliza
+                                    el formato de "HH:mm:ss", pero se puede dejar como "HH:mm"
+                                </p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/hoteles/getByRangoHoraCheck/1/09:00:00/11:00:00</code>
+                        </p>
+                        <pre v-if="hotelesGetByRangoHoraCheck.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ hotelesGetByRangoHoraCheck }}</code></pre>
+                    </div>
 
 
 
@@ -1462,6 +1569,9 @@
                             habitacionesGetByDisponibilidadHotel: [],
                             hoteles: [],
                             hotelesGetByCiudad: [],
+                            hotelesGetByTipoCategoria: [],
+                            hotelesGetByAmenidades: [],
+                            hotelesGetByRangoHoraCheck: [],
                             reservaciones: [],
                             reservacionesGetByEstatus: [],
                         },
@@ -1642,6 +1752,30 @@
                                     .catch(error => {
                                         console.error('Error al obtener los hoteles:', error);
                                     });
+                            }, fetchHotelesGetByTipoCategoria() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/hoteles/getByTipoCategoria/Resort/5')
+                                    .then(response => {
+                                        this.hotelesGetByTipoCategoria = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener los hoteles:', error);
+                                    });
+                            }, fetchHotelesGetByAmenidades() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/hoteles/getByAmenidades/delectus')
+                                    .then(response => {
+                                        this.hotelesGetByAmenidades = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener los hoteles:', error);
+                                    });
+                            }, fetchHotelesGetByRangoHoraCheck() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/hoteles/getByRangoHoraCheck/1/09:00:00/11:00:00')
+                                    .then(response => {
+                                        this.hotelesGetByRangoHoraCheck = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener los hoteles:', error);
+                                    });
                             }, fetchReservaciones() {
                                 axios.get('https://sailfish-master-goose.ngrok-free.app/reservaciones')
                                     .then(response => {
@@ -1705,6 +1839,12 @@
                                 return JSON.stringify(this.hoteles, null, 1);
                             }, formattedHotelesGetByCiudad() {
                                 return JSON.stringify(this.hotelesGetByCiudad, null, 1);
+                            }, formattedHotelesGetByTipoCategoria() {
+                                return JSON.stringify(this.hotelesGetByTipoCategoria, null, 1);
+                            }, formattedHotelesGetByAmenidades() {
+                                return JSON.stringify(this.hotelesGetByAmenidades, null, 1);
+                            }, formattedHotelesGetByRangoHoraCheck() {
+                                return JSON.stringify(this.hotelesGetByRangoHoraCheck, null, 1);
                             }, formattedReservaciones() {
                                 return JSON.stringify(this.reservaciones, null, 1);
                             }, formattedReservacionesGetByEstatus() {
@@ -1734,6 +1874,9 @@
                             this.fetchHabitacionesGetByDisponibilidadHotel();
                             this.fetchHoteles();
                             this.fetchHotelesGetByCiudad();
+                            this.fetchHotelesGetByTipoCategoria();
+                            this.fetchHotelesGetByAmenidades();
+                            this.fetchHotelesGetByRangoHoraCheck();
                             this.fetchReservaciones();
                             this.fetchReservacionesGetByEstatus();
                         }

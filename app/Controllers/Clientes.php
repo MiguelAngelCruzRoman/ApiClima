@@ -21,8 +21,9 @@ class Clientes extends BaseController
         return $response;
     }
 
-    public function documentacionIndex(){
-        return view('clientes/index'); 
+    public function documentacionIndex()
+    {
+        return view('clientes/index');
     }
 
     public function getByNombre($nombre)
@@ -46,7 +47,7 @@ class Clientes extends BaseController
         $response->setJSON($allClientes);
         return $response;
     }
-    
+
     public function getByDocumentoIdentidadValido($documento)
     {
         $clientes = new ClientesModel();
@@ -61,7 +62,7 @@ class Clientes extends BaseController
     public function getByTipoTarjetaBanco($tipoTarjeta, $banco)
     {
         $clientes = new ClientesModel();
-        $allClientes = $clientes->getByTipoTarjetaBanco($tipoTarjeta,$banco);
+        $allClientes = $clientes->getByTipoTarjetaBanco($tipoTarjeta, $banco);
 
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);

@@ -38,6 +38,9 @@ $routes->get('/habitaciones/getByDisponibilidadHotel/(:any)/(:any)', 'Habitacion
 $routes->get('/hoteles', 'Hoteles::index');
 $routes->get('/hoteles/documentacion', 'Hoteles::documentacionIndex');
 $routes->get('/hoteles/getByCiudad/(:any)', 'Hoteles::getByCiudad/$1');
+$routes->get('/hoteles/getByTipoCategoria/(:any)/(:any)', 'Hoteles::getByTipoCategoria/$1/$2');
+$routes->get('/hoteles/getByAmenidades/(:any)', 'Hoteles::getByAmenidades/$1');  
+$routes->get('/hoteles/getByRangoHoraCheck/(:num)/(:any)/(:any)', 'Hoteles::getByRangoHoraCheck/$1/$2/$3');
 
 $routes->get('/reservaciones', 'Reservaciones::index');
 $routes->get('/reservaciones/documentacion', 'Reservaciones::documentacionIndex');

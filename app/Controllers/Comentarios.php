@@ -20,8 +20,9 @@ class Comentarios extends BaseController
         $response->setJSON($allComentarios);
         return $response;
     }
-    public function documentacionIndex(){
-        return view('comentarios/index'); 
+    public function documentacionIndex()
+    {
+        return view('comentarios/index');
     }
 
     public function getByCalificacion($calificacion)
@@ -50,7 +51,7 @@ class Comentarios extends BaseController
     public function getByRangoFechas($fechaInicio, $fechaFin)
     {
         $comentarios = new ComentariosModel();
-        $allComentarios = $comentarios->getByRangoFechas($fechaInicio,$fechaFin);
+        $allComentarios = $comentarios->getByRangoFechas($fechaInicio, $fechaFin);
 
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
@@ -61,7 +62,7 @@ class Comentarios extends BaseController
     public function getByHotelCalificacion($nombreHotel, $calificacion)
     {
         $comentarios = new ComentariosModel();
-        $allComentarios = $comentarios->getByHotelCalificacion($nombreHotel,$calificacion);
+        $allComentarios = $comentarios->getByHotelCalificacion($nombreHotel, $calificacion);
 
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);

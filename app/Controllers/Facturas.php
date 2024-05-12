@@ -20,8 +20,9 @@ class Facturas extends BaseController
         $response->setJSON($allFacturas);
         return $response;
     }
-    public function documentacionIndex(){
-        return view('facturas/index'); 
+    public function documentacionIndex()
+    {
+        return view('facturas/index');
     }
 
     public function getByMetodoPago($metodoPago)
@@ -38,7 +39,7 @@ class Facturas extends BaseController
     public function getByRangoFechasEmision($fechaInicio, $fechaFin)
     {
         $facturas = new FacturasModel();
-        $allFacturas = $facturas->getByRangoFechasEmision($fechaInicio,$fechaFin);
+        $allFacturas = $facturas->getByRangoFechasEmision($fechaInicio, $fechaFin);
 
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
