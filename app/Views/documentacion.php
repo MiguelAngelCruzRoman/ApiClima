@@ -60,7 +60,7 @@
             margin-top: 50px;
         }
 
-        .separator_empy {
+        .separator_empty {
             margin-bottom: 50px;
             margin-top: 50px;
         }
@@ -79,9 +79,6 @@
             padding: 5px;
         }
     </style>
-</head>
-
-<body data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-offset="50">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="\logoEmpresa.png" alt="" height="50px"></a>
@@ -92,10 +89,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Probar API</a>
+                        <a class="nav-link" href="https://sailfish-master-goose.ngrok-free.app/">Probar API</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#documentacion">Documentación</a>
+                        <a class="nav-link" href="#"><strong>Documentación</strong></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/MiguelAngelCruzRoman/ApiHotel">Repositorio</a>
@@ -104,10 +101,13 @@
             </div>
         </div>
     </nav>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-offset="50">
 
     <div class="container-fluid">
-        <div id="app">
 
+        <div id="app">
             <div class="row">
                 <div class="col-3">
                     <div id="sidebar" class="sidebar">
@@ -133,6 +133,21 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#clientes-getByNombre"
                                             style="color:#000000">getByNombre<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#clientes-getByNacionalidad"
+                                            style="color:#000000">getByNacionalidad<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#clientes-getByDocumentoIdentidadValido"
+                                            style="color:#000000">getByDocumentoIdentidadValido<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#clientes-getByTipoTarjetaBanco"
+                                            style="color:#000000">getByTipoTarjetaBanco<span
                                                 style="color:#9b9b9b">(endpoint)</span></a>
                                     </li>
                                 </ul>
@@ -210,7 +225,8 @@
                                         style="color:#9b9b9b">(grupo)</span></a>
                                 <ul class="nav flex-column sub-item">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#reservaciones-endpoint" style="color:#000000">reservaciones<span
+                                        <a class="nav-link" href="#reservaciones-endpoint"
+                                            style="color:#000000">reservaciones<span
                                                 style="color:#9b9b9b">(endpoint)</span></a>
                                     </li>
                                     <li class="nav-item">
@@ -368,7 +384,7 @@
                             </tbody>
                         </table>
 
-                        <div class="separator_empy"></div>
+                        <div class="separator_empty"></div>
 
                         <div id="clientes-endpoint">
                             <h3>clientes <span style="color:#9b9b9b">(endpoint)</span></h3>
@@ -387,7 +403,7 @@
                         </div>
                     </div>
 
-                    <div class="separator_empy"></div>
+                    <div class="separator_empty"></div>
 
                     <div id="clientes-getByNombre">
                         <h3>getByNombre<span style="color:#9b9b9b">(endpoint)</span></h3>
@@ -407,6 +423,76 @@
                         </p>
                         <pre v-if="clientesGetByNombre.length"
                             style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ clientesGetByNombre }}</code></pre>
+                    </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="clientes-getByNacionalidad">
+                        <h3>getByNacionalidad<span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/clientes/getByNacionalidad/{pais}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de clientes que
+                            coincidan (exactamente) con la nacionalidad que s eingrese</p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{pais}" por el nombre del país que tienen los clientes que se buscan</p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/clientes/getByNacionalidad/México</code>
+                        </p>
+                        <pre v-if="clientesGetByNacionalidad.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ clientesGetByNacionalidad }}</code></pre>
+                    </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="clientes-getByDocumentoIdentidadValido">
+                        <h3>getByDocumentoIdentidadValido<span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/clientes/getByDocumentoIdentidadValido/{tipoDocumento}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de clientes que tengan un documento de identidad válido (con fecha menor a la actual)</p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{tipoDocumento}" por la clase de documento que se requiera (DNI, Pasaporte, Visa, etc)</p>
+                            </li>
+                            <li>
+                                <p>La fecha se compara respecto a la del sistema operativo, por lo que no es necesario ingresarla</p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/clientes/getByDocumentoIdentidadValido/Pasaporte</code>
+                        </p>
+                        <pre v-if="clientesGetByDocumentoIdentidadValido.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ clientesGetByDocumentoIdentidadValido }}</code></pre>
+                    </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="clientes-getByTipoTarjetaBanco">
+                        <h3>getByTipoTarjetaBanco<span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/clientes/getByTipoTarjetaBanco/{tipoTarjeta}/{banco}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de clientes que tengan una tarjeta de crédito de un banco y un tipo de tarjeta en particular</p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{tipoTarjeta}" por la clase de tarjeta que se requiera (Visa, MasterCard, American Express, etc.)</p>
+                            </li>
+                            <li>
+                                <p>Se tiene que sustituir "{banco}" por el nombre del banco que se requiera (BBVA, HSBC, Banco Santander,etc.)</p>
+                            </li>
+                            <li>
+                                <p>La fecha se compara respecto a la del sistema operativo, por lo que no es necesario ingresarla</p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/clientes/getByTipoTarjetaBanco/MasterCard/BBVA</code>
+                        </p>
+                        <pre v-if="clientesGetByTipoTarjetaBanco.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ clientesGetByTipoTarjetaBanco }}</code></pre>
                     </div>
 
 
@@ -467,7 +553,7 @@
                             </tbody>
                         </table>
 
-                        <div class="separator_empy"></div>
+                        <div class="separator_empty"></div>
 
                         <div id="comentarios-endpoint">
                             <h3>comentarios <span style="color:#9b9b9b">(endpoint)</span></h3>
@@ -487,7 +573,7 @@
                         </div>
                     </div>
 
-                    <div class="separator_empy"></div>
+                    <div class="separator_empty"></div>
 
                     <div id="comentarios-getByCalificacion">
                         <h3>getByCalificacion <span style="color:#9b9b9b">(endpoint)</span></h3>
@@ -574,7 +660,7 @@
                             </tbody>
                         </table>
 
-                        <div class="separator_empy"></div>
+                        <div class="separator_empty"></div>
 
                         <div id="facturas-endpoint">
                             <h3>facturas <span style="color:#9b9b9b">(endpoint)</span></h3>
@@ -593,7 +679,7 @@
                         </div>
                     </div>
 
-                    <div class="separator_empy"></div>
+                    <div class="separator_empty"></div>
 
                     <div id="facturas-getByMetodoPago">
                         <h3>getByMetodoPago<span style="color:#9b9b9b">(endpoint)</span></h3>
@@ -692,7 +778,7 @@
                             </tbody>
                         </table>
 
-                        <div class="separator_empy"></div>
+                        <div class="separator_empty"></div>
 
                         <div id="habitaciones-endpoint">
                             <h3>habitaciones <span style="color:#9b9b9b">(endpoint)</span></h3>
@@ -712,7 +798,7 @@
                         </div>
                     </div>
 
-                    <div class="separator_empy"></div>
+                    <div class="separator_empty"></div>
 
                     <div id="habitaciones-getByPrecio">
                         <h3>getByPrecio<span style="color:#9b9b9b">(endpoint)</span></h3>
@@ -846,7 +932,7 @@
                             </tbody>
                         </table>
 
-                        <div class="separator_empy"></div>
+                        <div class="separator_empty"></div>
 
                         <div id="hoteles-endpoint">
                             <h3>hoteles <span style="color:#9b9b9b">(endpoint)</span></h3>
@@ -865,7 +951,7 @@
                         </div>
                     </div>
 
-                    <div class="separator_empy"></div>
+                    <div class="separator_empty"></div>
 
                     <div id="hoteles-getByCiudad">
                         <h3>getByCiudad<span style="color:#9b9b9b">(endpoint)</span></h3>
@@ -893,9 +979,12 @@
 
                     <div id="reservaciones">
                         <h2>Reservaciones <span style="color:#9b9b9b">(grupo)</span></h2>
-                        <p>La colección "reservaciones" documenta la API de hoteles y abarca todos los datos relacionados
-                            con las reservaciones que realizan los clientes en el sistema. Esta colección incluye endpoints
-                            para la gestión de las fechas en las que se hizo la reservación, la persona que la realizó y el costo de su estancia.
+                        <p>La colección "reservaciones" documenta la API de hoteles y abarca todos los datos
+                            relacionados
+                            con las reservaciones que realizan los clientes en el sistema. Esta colección incluye
+                            endpoints
+                            para la gestión de las fechas en las que se hizo la reservación, la persona que la realizó y
+                            el costo de su estancia.
                             Cada reservación está representada por un conjunto de atributos, como se muestra a
                             continuación.
                         </p>
@@ -957,13 +1046,14 @@
                             </tbody>
                         </table>
 
-                        <div class="separator_empy"></div>
+                        <div class="separator_empty"></div>
 
                         <div id="reservaciones-endpoint">
                             <h3>reservaciones <span style="color:#9b9b9b">(endpoint)</span></h3>
                             <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/reservaciones</p></code>
 
-                            <p>Esta petición devuelve todos los documentos que se tienen en la colección de reservaciones
+                            <p>Esta petición devuelve todos los documentos que se tienen en la colección de
+                                reservaciones
                             </p>
                             <p><strong>Condiciones necesarias:</strong></p>
                             <ul>
@@ -977,13 +1067,15 @@
                         </div>
                     </div>
 
-                    <div class="separator_empy"></div>
+                    <div class="separator_empty"></div>
 
                     <div id="reservaciones-getByEstatus">
                         <h3>getByEstatus <span style="color:#9b9b9b">(endpoint)</span></h3>
                         <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/reservaciones/getByEstatus/{estatus}</p></code>
-                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de reservaciones que
-                            tengan en como valor de su atributo de "estatus" el mismo estado que se ingrese en la URL</p>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de reservaciones
+                            que
+                            tengan en como valor de su atributo de "estatus" el mismo estado que se ingrese en la URL
+                        </p>
                         <p><strong>Condiciones necesarias:</strong></p>
                         <ul>
                             <li>
@@ -1000,35 +1092,35 @@
                 </div>
             </div>
 
-            <<script>
-    $(document).ready(function () {
-        $('body').scrollspy({ target: '#sidebar' });
+            <script>
+                $(document).ready(function () {
+                    $('body').scrollspy({ target: '#sidebar' });
 
-        $('#sidebar a').on('click', function (e) {
-            if (this.hash !== '') {
-                e.preventDefault();
+                    $('#sidebar a').on('click', function (e) {
+                        if (this.hash !== '') {
+                            e.preventDefault();
 
-                const hash = this.hash;
+                            const hash = this.hash;
 
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top 
-                }, 800, function () {
-                    window.location.hash = hash;
+                            $('html, body').animate({
+                                scrollTop: $(hash).offset().top
+                            }, 800, function () {
+                                window.location.hash = hash;
+                            });
+                        }
+                    });
+
+                    $(window).on('scroll', function () {
+                        $('.content div').each(function () {
+                            if ($(window).scrollTop() >= $(this).offset().top) {
+                                var id = $(this).attr('id');
+                                $('#sidebar').find('.nav-link').removeClass('active');
+                                $('#sidebar').find('a[href="#' + id + '"]').addClass('active');
+                            }
+                        });
+                    });
                 });
-            }
-        });
-
-        $(window).on('scroll', function () {
-            $('.content div').each(function () {
-                if ($(window).scrollTop() >= $(this).offset().top) {
-                    var id = $(this).attr('id');
-                    $('#sidebar').find('.nav-link').removeClass('active');
-                    $('#sidebar').find('a[href="#' + id + '"]').addClass('active');
-                }
-            });
-        });
-    });
-</script>
+            </script>
 
 
 
@@ -1041,6 +1133,9 @@
                         data: {
                             clientes: [],
                             clientesGetByNombre: [],
+                            clientesGetByNacionalidad: [],
+                            clientesGetByDocumentoIdentidadValido: [],
+                            clientesGetByTipoTarjetaBanco: [],
                             comentarios: [],
                             comentariosGetByCalificacion: [],
                             facturas: [],
@@ -1065,6 +1160,30 @@
                                 axios.get('https://sailfish-master-goose.ngrok-free.app/clientes/getByNombre/Aldo')
                                     .then(response => {
                                         this.clientesGetByNombre = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener los clientes:', error);
+                                    });
+                            }, fetchClientesGetByNacionalidad() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/clientes/getByNacionalidad/México')
+                                    .then(response => {
+                                        this.clientesGetByNacionalidad = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener los clientes:', error);
+                                    });
+                            }, fetchClientesGetByDocumentoIdentidadValido() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/clientes/getByDocumentoIdentidadValido/Pasaporte')
+                                    .then(response => {
+                                        this.clientesGetByDocumentoIdentidadValido = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener los clientes:', error);
+                                    });
+                            },fetchClientesGetByTipoTarjetaBanco() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/clientes/getByTipoTarjetaBanco/MasterCard/BBVA')
+                                    .then(response => {
+                                        this.clientesGetByTipoTarjetaBanco = response.data;
                                     })
                                     .catch(error => {
                                         console.error('Error al obtener los clientes:', error);
@@ -1135,7 +1254,7 @@
                                     .catch(error => {
                                         console.error('Error al obtener los hoteles:', error);
                                     });
-                            },fetchReservaciones() {
+                            }, fetchReservaciones() {
                                 axios.get('https://sailfish-master-goose.ngrok-free.app/reservaciones')
                                     .then(response => {
                                         this.reservaciones = response.data;
@@ -1143,7 +1262,7 @@
                                     .catch(error => {
                                         console.error('Error al obtener las reservaciones:', error);
                                     });
-                            },fetchReservacionesGetByEstatus() {
+                            }, fetchReservacionesGetByEstatus() {
                                 axios.get('https://sailfish-master-goose.ngrok-free.app/reservaciones/getByEstatus/Cancelada')
                                     .then(response => {
                                         this.reservacionesGetByEstatus = response.data;
@@ -1158,6 +1277,12 @@
                                 return JSON.stringify(this.clientes, null, 1);
                             }, formattedClientesGetByNombre() {
                                 return JSON.stringify(this.clientesGetByNombre, null, 1);
+                            }, formattedClientesGetByNacionalidad() {
+                                return JSON.stringify(this.clientesGetByNacionalidad, null, 1);
+                            }, formattedClientesGetByDocumentoIdentidadValido() {
+                                return JSON.stringify(this.clientesGetByDocumentoIdentidadValido, null, 1);
+                            }, formattedClientesGetByTipoTarjetaBanco() {
+                                return JSON.stringify(this.clientesGetByTipoTarjetaBanco, null, 1);
                             }, formattedComentarios() {
                                 return JSON.stringify(this.comentarios, null, 1);
                             }, formattedComentariosGetByCalificacion() {
@@ -1183,6 +1308,9 @@
                         mounted() {
                             this.fetchClientes();
                             this.fetchClientesGetByNombre();
+                            this.fetchClientesGetByNacionalidad();
+                            this.fetchClientesGetByDocumentoIdentidadValido();
+                            this.fetchClientesGetByTipoTarjetaBanco();
                             this.fetchComentarios();
                             this.fetchComentariosGetByCalificacion();
                             this.fetchFacturas();

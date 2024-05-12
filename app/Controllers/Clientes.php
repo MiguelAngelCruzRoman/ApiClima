@@ -35,4 +35,37 @@ class Clientes extends BaseController
         $response->setJSON($allClientes);
         return $response;
     }
+
+    public function getByNacionalidad($nacionalidad)
+    {
+        $clientes = new ClientesModel();
+        $allClientes = $clientes->getByNacionalidad($nacionalidad);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allClientes);
+        return $response;
+    }
+    
+    public function getByDocumentoIdentidadValido($documento)
+    {
+        $clientes = new ClientesModel();
+        $allClientes = $clientes->getByDocumentoIdentidadValido($documento);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allClientes);
+        return $response;
+    }
+
+    public function getByTipoTarjetaBanco($tipoTarjeta, $banco)
+    {
+        $clientes = new ClientesModel();
+        $allClientes = $clientes->getByTipoTarjetaBanco($tipoTarjeta,$banco);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allClientes);
+        return $response;
+    }
 }

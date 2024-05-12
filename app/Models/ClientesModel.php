@@ -35,5 +35,22 @@ class ClientesModel extends Model
         return $clientes->toArray();
     }
 
+    public function getByNacionalidad($nacionalidad)
+    {
+        $clientes = $this->collection->find(['nacionalidad' => $nacionalidad]);
+        return $clientes->toArray();
+    }
+
+    public function getByDocumentoIdentidadValido($documento)
+    {
+        $clientes = $this->collection->find(['documentoIdentidad.tipoDocumento' => $documento,'documentoIdentidad.fechaValidez' => ['$gte' => date("Y-m-d")]]); 
+        return $clientes->toArray();
+    }
+
+    public function getByTipoTarjetaBanco($tipoTarjeta,$banco)
+    {
+        $clientes = $this->collection->find(['tarjetaCredito.tipo' => $tipoTarjeta,'tarjetaCredito.banco' => $banco,'tarjetaCredito.fechaCaducidad' => ['$gte' => date("Y-m-d")]]); 
+        return $clientes->toArray();
+    }
 
 }

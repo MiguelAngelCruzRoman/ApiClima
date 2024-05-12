@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://sailfish-master-goose.ngrok-free.app/"><strong>Probar
+                    <a class="nav-link" href="#"><strong>Probar
                             API</strong></a>
                 </li>
                 <li class="nav-item active">
@@ -70,13 +70,17 @@
                 @click="updateRoute('reservaciones/getByEstatus/Cancelada')">reservaciones/getByEstatus/Cancelada</a>,
         </div>
 
-        <br>
+        <br><br>
         <div class="reservations mb-4">
             <div class="elementotions">
                 <h2 v-if="ruta !== ''">Resultado para "{{ruta}}":</h2>
                 <h2 v-else>Prueba buscando "clientes":</h2>
+                <br>
+
                 <pre v-if="elementos.length"
                     style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ formattedElementos }}</code></pre>
+                <h5 v-else align="center">No se encontraron resultados para "{{ruta}}". Intente con otra ruta</h5>
+
                 <center>
                     <a v-if="elementos.length" :href="ruta" target="_blank" class="btn btn-primary">Ver JSON</a>
                 </center>
@@ -105,7 +109,7 @@
                 },
                 updateRoute(newRoute) {
                     this.ruta = newRoute;
-                    this.fetchElementos(); 
+                    this.fetchElementos();
                 }
             },
             computed: {
