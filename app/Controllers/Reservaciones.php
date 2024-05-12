@@ -20,14 +20,48 @@ class Reservaciones extends BaseController
         $response->setJSON($allReservaciones);
         return $response;
     }
-    public function documentacionIndex(){
-        return view('reservaciones/index'); 
+    public function documentacionIndex()
+    {
+        return view('reservaciones/index');
     }
 
     public function getByEstatus($estatus)
     {
         $reservaciones = new ReservacionesModel();
         $allReservaciones = $reservaciones->getByEstatus($estatus);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allReservaciones);
+        return $response;
+    }
+
+    public function getByRangoFechasEstadia($fechaInicio, $fechaFin)
+    {
+        $reservaciones = new ReservacionesModel();
+        $allReservaciones = $reservaciones->getByRangoFechasEstadia($fechaInicio, $fechaFin);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allReservaciones);
+        return $response;
+    }
+
+    public function getByCliente($nombreCliente)
+    {
+        $reservaciones = new ReservacionesModel();
+        $allReservaciones = $reservaciones->getByCliente($nombreCliente);
+
+        $response = service('response');
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setJSON($allReservaciones);
+        return $response;
+    }
+
+    public function getByTipoHabitacion($tipoHabitacion)
+    {
+        $reservaciones = new ReservacionesModel();
+        $allReservaciones = $reservaciones->getByTipoHabitacion($tipoHabitacion);
 
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);

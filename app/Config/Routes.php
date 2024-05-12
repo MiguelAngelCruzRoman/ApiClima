@@ -45,3 +45,6 @@ $routes->get('/hoteles/getByRangoHoraCheck/(:num)/(:any)/(:any)', 'Hoteles::getB
 $routes->get('/reservaciones', 'Reservaciones::index');
 $routes->get('/reservaciones/documentacion', 'Reservaciones::documentacionIndex');
 $routes->get('/reservaciones/getByEstatus/(:any)', 'Reservaciones::getByEstatus/$1');
+$routes->get('/reservaciones/getByRangoFechasEstadia/(:any)/(:any)', 'Reservaciones::getByRangoFechasEstadia/$1/$2');
+$routes->get('/reservaciones/getByCliente/(:any)', 'Reservaciones::getByCliente/$1'); 
+$routes->get('/reservaciones/getByTipoHabitacion/(:any)', 'Reservaciones::getByTipoHabitacion/$1');

@@ -317,6 +317,21 @@
                                             style="color:#000000">getByEstatus<span
                                                 style="color:#9b9b9b">(endpoint)</span></a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#reservaciones-getByRangoFechasEstadia"
+                                            style="color:#000000">getByRangoFechasEstadia<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#reservaciones-getByCliente"
+                                            style="color:#000000">getByCliente<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#reservaciones-getByTipoHabitacion"
+                                            style="color:#000000">getByTipoHabitacion<span
+                                                style="color:#9b9b9b">(endpoint)</span></a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -1505,6 +1520,80 @@
                         <pre v-if="reservacionesGetByEstatus.length"
                             style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ reservacionesGetByEstatus }}</code></pre>
                     </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="reservaciones-getByRangoFechasEstadia">
+                        <h3>getByRangoFechasEstadia <span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/reservaciones/getByRangoFechasEstadia/{fechaInicio}/{fechaFin}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de reservaciones
+                            que contemplen una estadía dentro de la fecha establecida, en base a la fecha en de ingreso
+                            (cuando hizo check-in en el hotel)
+                        </p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{fechaInicio}" por la fecha menor para el rango de fechas.
+                                    Usar el formato "año-mes-día"</p>
+                            </li>
+                            <li>
+                                <p>Se tiene que sustituir "{fechaFin}" por la fecha mayor para el rango de fechas. Usar
+                                    el formato "año-mes-día"</p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/reservaciones/getByRangoFechasEstadia/2003-01-01/2010-12-12</code>
+                        </p>
+                        <pre v-if="reservacionesGetByRangoFechasEstadia.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ reservacionesGetByRangoFechasEstadia }}</code></pre>
+                    </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="reservaciones-getByCliente">
+                        <h3>getByCliente <span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/reservaciones/getByCliente/{nombreCliente}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de reservaciones
+                            que se hayan realizado al nombre de un cliente en particular
+                        </p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{nombre}" por el primer nombre, segundo nombre, apellido
+                                    paterno o el apellido materno</p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/reservaciones/getByCliente/Zoé</code>
+                        </p>
+                        <pre v-if="reservacionesGetByCliente.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ reservacionesGetByCliente }}</code></pre>
+                    </div>
+
+                    <div class="separator_empty"></div>
+
+                    <div id="reservaciones-getByTipoHabitacion">
+                        <h3>getByTipoHabitacion <span style="color:#9b9b9b">(endpoint)</span></h3>
+                        <code><p><span class="get_span">GET</span> https://sailfish-master-goose.ngrok-free.app/reservaciones/getByTipoHabitacion/{tipoHabitacion}</p></code>
+                        <p>Esta petición devuelve todos los documentos que se tienen en la colección de reservaciones
+                            que se realizaron con un tipo de habitación en particular
+                        </p>
+                        <p><strong>Condiciones necesarias:</strong></p>
+                        <ul>
+                            <li>
+                                <p>Se tiene que sustituir "{tipoHabitacion}" por la clase de habitación reservada
+                                    (Doble, Individual, Suite, etc.)</p>
+                            </li>
+                        </ul>
+                        <p><strong>Resultado de ejemplo de consulta:</strong></p>
+                        <p>
+                            <code>https://sailfish-master-goose.ngrok-free.app/reservaciones/getByTipoHabitacion/Individual</code>
+                        </p>
+                        <pre v-if="reservacionesGetByTipoHabitacion.length"
+                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ reservacionesGetByTipoHabitacion }}</code></pre>
+                    </div>
                 </div>
             </div>
 
@@ -1574,6 +1663,9 @@
                             hotelesGetByRangoHoraCheck: [],
                             reservaciones: [],
                             reservacionesGetByEstatus: [],
+                            reservacionesGetByRangoFechasEstadia: [],
+                            reservacionesGetByCliente: [],
+                            reservacionesGetByTipoHabitacion: [],
                         },
                         methods: {
                             fetchClientes() {
@@ -1792,6 +1884,30 @@
                                     .catch(error => {
                                         console.error('Error al obtener las reservaciones:', error);
                                     });
+                            }, fetchReservacionesGetByRangoFechasEstancia() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/reservaciones/getByRangoFechasEstadia/2003-01-01/2010-12-12')
+                                    .then(response => {
+                                        this.reservacionesGetByRangoFechasEstadia = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener las reservaciones:', error);
+                                    });
+                            }, fetchReservacionesGetByCliente() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/reservaciones/getByCliente/Zoé')
+                                    .then(response => {
+                                        this.reservacionesGetByCliente = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener las reservaciones:', error);
+                                    });
+                            }, fetchReservacionesGetByTipoHabitacion() {
+                                axios.get('https://sailfish-master-goose.ngrok-free.app/reservaciones/getByTipoHabitacion/Individual')
+                                    .then(response => {
+                                        this.reservacionesGetByTipoHabitacion = response.data;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error al obtener las reservaciones:', error);
+                                    });
                             }
                         },
                         computed: {
@@ -1849,6 +1965,12 @@
                                 return JSON.stringify(this.reservaciones, null, 1);
                             }, formattedReservacionesGetByEstatus() {
                                 return JSON.stringify(this.reservacionesGetByEstatus, null, 1);
+                            }, formattedReservacionesGetByRangoFechasEstancia() {
+                                return JSON.stringify(this.reservacionesGetByRangoFechasEstadia, null, 1);
+                            }, formattedReservacionesGetByCliente() {
+                                return JSON.stringify(this.reservacionesGetByCliente, null, 1);
+                            }, formattedReservacionesGetByTipoHabitacion() {
+                                return JSON.stringify(this.reservacionesGetByTipoHabitacion, null, 1);
                             }
                         },
                         mounted() {
@@ -1879,6 +2001,9 @@
                             this.fetchHotelesGetByRangoHoraCheck();
                             this.fetchReservaciones();
                             this.fetchReservacionesGetByEstatus();
+                            this.fetchReservacionesGetByRangoFechasEstancia();
+                            this.fetchReservacionesGetByCliente();
+                            this.fetchReservacionesGetByTipoHabitacion();
                         }
                     });
                 });
