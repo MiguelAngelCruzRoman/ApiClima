@@ -27,15 +27,15 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://sailfish-master-goose.ngrok-free.app/"><strong>Probar API</strong></a>
+                    <a class="nav-link" href="https://sailfish-master-goose.ngrok-free.app/"><strong>Probar
+                            API</strong></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link"
-                        href="https://sailfish-master-goose.ngrok-free.app/elementos/documentacion">Documentación</strong></a>
+                        href="https://sailfish-master-goose.ngrok-free.app/documentacion">Documentación</strong></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link"
-                        href="https://github.com/MiguelAngelCruzRoman/ApiHotel">Repositorio</strong></a>
+                    <a class="nav-link" href="https://github.com/MiguelAngelCruzRoman/ApiHotel">Repositorio</strong></a>
                 </li>
             </ul>
         </div>
@@ -64,9 +64,10 @@
             <a href="#" @click="updateRoute('clientes/getByNombre/Rebeca')">clientes/getByNombre/Rebeca</a>,
             <a href="#" @click="updateRoute('comentarios/getByCalificacion/2')">comentarios/getByCalificacion/2</a>,
             <a href="#" @click="updateRoute('facturas/getByMetodoPago/Efectivo')">facturas/getByMetodoPago/Efectivo</a>,
-            <a href="#" @click="updateRoute('habitaciones/getByPrecio/4322')">habitaciones/getByPrecio/4322</a>,
-            <a href="#" @click="updateRoute('hoteles/getByCiudad/Bangkok')">hoteles/getByCiudad/Bangkok</a>,
-            <a href="#" @click="updateRoute('reservaciones/getByEstatus/Cancelada')">reservaciones/getByEstatus/Cancelada</a>,
+            <a href="#" @click="updateRoute('habitaciones/getByPrecio/3962  ')">habitaciones/getByPrecio/3962</a>,
+            <a href="#" @click="updateRoute('hoteles/getByCiudad/París')">hoteles/getByCiudad/París</a>,
+            <a href="#"
+                @click="updateRoute('reservaciones/getByEstatus/Cancelada')">reservaciones/getByEstatus/Cancelada</a>,
         </div>
 
         <br>
@@ -104,7 +105,7 @@
                 },
                 updateRoute(newRoute) {
                     this.ruta = newRoute;
-                    this.fetchElementos(); // Actualiza los datos al cambiar la ruta
+                    this.fetchElementos(); 
                 }
             },
             computed: {

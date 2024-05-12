@@ -23,7 +23,7 @@ class HotelesModel extends Model
 
     public function getByCiudad($ciudad)
     {
-        $hoteles = $this->collection->find( ['ubicación.ciudad' => $ciudad] );
+        $hoteles = $this->collection->find( ['ubicacion.ciudad' => $ciudad] );
         return $hoteles->toArray();
     }
 }
