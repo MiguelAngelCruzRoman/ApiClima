@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "72a3257a-19fc-439a-ac1e-7eee6d32b85d",
+		"name": "hoteles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33509521",
+		"_collection_link": "https://www.postman.com/yomerengues8/workspace/api-hotel-codeigniter/collection/33509521-72a3257a-19fc-439a-ac1e-7eee6d32b85d?action=share&source=collection_link&creator=33509521"
+	},
+	"item": [
+		{
+			"name": "hoteles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/hoteles",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"hoteles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByCiudad",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/hoteles/getByCiudad/Estambul",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"hoteles",
+						"getByCiudad",
+						"Estambul"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByTipoCategoria",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/hoteles/getByTipoCategoria/Resort/5",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"hoteles",
+						"getByTipoCategoria",
+						"Resort",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByAmenidades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/hoteles/getByAmenidades/delectus",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"hoteles",
+						"getByAmenidades",
+						"delectus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByRangoHoraCheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/hoteles/getByRangoHoraCheck/1/09:00:00/11:00:00",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"hoteles",
+						"getByRangoHoraCheck",
+						"1",
+						"09:00:00",
+						"11:00:00"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

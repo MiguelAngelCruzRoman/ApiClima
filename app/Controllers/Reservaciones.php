@@ -15,9 +15,13 @@ class Reservaciones extends BaseController
         $reservaciones = new ReservacionesModel();
         $allReservaciones = $reservaciones->index();
 
+        $content = [
+            'datos' => $allReservaciones,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allReservaciones);
+        $response->setJSON($content);
         return $response;
     }
     public function documentacionIndex()
@@ -30,9 +34,13 @@ class Reservaciones extends BaseController
         $reservaciones = new ReservacionesModel();
         $allReservaciones = $reservaciones->getByEstatus($estatus);
 
+        $content = [
+            'datos' => $allReservaciones,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allReservaciones);
+        $response->setJSON($content);
         return $response;
     }
 
@@ -41,9 +49,13 @@ class Reservaciones extends BaseController
         $reservaciones = new ReservacionesModel();
         $allReservaciones = $reservaciones->getByRangoFechasEstadia($fechaInicio, $fechaFin);
 
+        $content = [
+            'datos' => $allReservaciones,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allReservaciones);
+        $response->setJSON($content);
         return $response;
     }
 
@@ -52,9 +64,13 @@ class Reservaciones extends BaseController
         $reservaciones = new ReservacionesModel();
         $allReservaciones = $reservaciones->getByCliente($nombreCliente);
 
+        $content = [
+            'datos' => $allReservaciones,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allReservaciones);
+        $response->setJSON($content);
         return $response;
     }
 
@@ -63,9 +79,13 @@ class Reservaciones extends BaseController
         $reservaciones = new ReservacionesModel();
         $allReservaciones = $reservaciones->getByTipoHabitacion($tipoHabitacion);
 
+        $content = [
+            'datos' => $allReservaciones,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allReservaciones);
+        $response->setJSON($content);
         return $response;
     }
 }

@@ -470,12 +470,12 @@
                                     <td>4077472496020357755</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">cvv</th>
+                                    <th scope="row" colspan="2">cvv</th>
                                     <td>Number</td>
                                     <td>150</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">fechaCaducidad</th>
+                                    <th scope="row" colspan="2">fechaCaducidad</th>
                                     <td>String</td>
                                     <td>2015-05-05</td>
                                 </tr>
@@ -496,7 +496,7 @@
                                 </li>
                             </ul>
                             <p><strong>Resultado de ejemplo de consulta:</strong></p>
-                            <pre v-if="clientes.length"
+                            <pre 
                                 style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ clientes }}</code></pre>
                         </div>
                     </div>
@@ -519,8 +519,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/clientes/getByNombre/Aldo</code>
                         </p>
-                        <pre v-if="clientesGetByNombre.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ clientesGetByNombre }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ clientesGetByNombre }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -541,8 +540,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/clientes/getByNacionalidad/México</code>
                         </p>
-                        <pre v-if="clientesGetByNacionalidad.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ clientesGetByNacionalidad }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ clientesGetByNacionalidad }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -567,8 +565,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/clientes/getByDocumentoIdentidadValido/Pasaporte</code>
                         </p>
-                        <pre v-if="clientesGetByDocumentoIdentidadValido.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ clientesGetByDocumentoIdentidadValido }}</code></pre>
+                        <pre  style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ clientesGetByDocumentoIdentidadValido }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -597,8 +594,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/clientes/getByTipoTarjetaBanco/MasterCard/BBVA</code>
                         </p>
-                        <pre v-if="clientesGetByTipoTarjetaBanco.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ clientesGetByTipoTarjetaBanco }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ clientesGetByTipoTarjetaBanco }}</code></pre>
                     </div>
 
 
@@ -678,8 +674,7 @@
                                 </li>
                             </ul>
                             <p><strong>Resultado de ejemplo de consulta:</strong></p>
-                            <pre v-if="comentarios.length"
-                                style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ comentarios }}</code></pre>
+                            <pre  style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ comentarios }}</code></pre>
                         </div>
                     </div>
 
@@ -702,8 +697,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/comentarios/getByCalificacion/2</code>
                         </p>
-                        <pre v-if="comentariosGetByCalificacion.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ comentariosGetByCalificacion }}</code></pre>
+                        <pre  style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ comentariosGetByCalificacion }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -728,8 +722,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/comentarios/getByRangoFechas/2024-01-1/2024-12-12</code>
                         </p>
-                        <pre v-if="comentariosGetByRangoFechas.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ comentariosGetByRangoFechas }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ comentariosGetByRangoFechas }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -751,8 +744,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/comentarios/getByCliente/Aldo</code>
                         </p>
-                        <pre v-if="comentariosGetByCliente.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ comentariosGetByCliente }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ comentariosGetByCliente }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -777,8 +769,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/comentarios/getByHotelCalificacion/Melgar-Gálvez S.A. de C.V./2</code>
                         </p>
-                        <pre v-if="comentariosGetByHotelCalificacion.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ comentariosGetByHotelCalificacion }}</code></pre>
+                        <pre  style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ comentariosGetByHotelCalificacion }}</code></pre>
                     </div>
 
 
@@ -864,8 +855,7 @@
                                 </li>
                             </ul>
                             <p><strong>Resultado de ejemplo de consulta:</strong></p>
-                            <pre v-if="facturas.length"
-                                style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ facturas }}</code></pre>
+                            <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ facturas }}</code></pre>
                         </div>
                     </div>
 
@@ -888,8 +878,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/facturas/getByMetodoPago/Tarjeta de crédito</code>
                         </p>
-                        <pre v-if="facturasGetByMetodoPago.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ facturasGetByMetodoPago }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ facturasGetByMetodoPago }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -914,8 +903,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/facturas/getByRangoFechasEmision/2023-01-01/2024-12-12</code>
                         </p>
-                        <pre v-if="facturasGetByRangoFechasEmision.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ facturasGetByRangoFechasEmision }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ facturasGetByRangoFechasEmision }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -940,8 +928,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/facturas/getByEstatusProximoVencimiento/Pagada</code>
                         </p>
-                        <pre v-if="facturasGetByEstatusProximoVencimiento.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ facturasGetByEstatusProximoVencimiento }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ facturasGetByEstatusProximoVencimiento }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -962,8 +949,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/facturas/getByFechaReservacion/2021-07-25</code>
                         </p>
-                        <pre v-if="facturasGetByFechaReservacion.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ facturasGetByFechaReservacion }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ facturasGetByFechaReservacion }}</code></pre>
                     </div>
 
 
@@ -1060,8 +1046,7 @@
                                 </li>
                             </ul>
                             <p><strong>Resultado de ejemplo de consulta:</strong></p>
-                            <pre v-if="habitaciones.length"
-                                style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ habitaciones }}</code></pre>
+                            <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ habitaciones }}</code></pre>
                         </div>
                     </div>
 
@@ -1082,8 +1067,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/habitaciones/getByPrecio/2544</code>
                         </p>
-                        <pre v-if="habitacionesGetByPrecio.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ habitacionesGetByPrecio }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ habitacionesGetByPrecio }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -1104,8 +1088,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/habitaciones/getByServiciosExactos/dolor,neque</code>
                         </p>
-                        <pre v-if="habitacionesGetByServiciosExactos.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ habitacionesGetByServiciosExactos }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ habitacionesGetByServiciosExactos }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -1126,8 +1109,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/habitaciones/getByServiciosSimilares/dolor,neque</code>
                         </p>
-                        <pre v-if="habitacionesGetByServiciosSimilares.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ habitacionesGetByServiciosSimilares }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ habitacionesGetByServiciosSimilares }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -1150,8 +1132,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/habitaciones/getByDisponibilidadHotel/1/Melgar-G%C3%A1lvez%20S.A.%20de%20C.V.</code>
                         </p>
-                        <pre v-if="habitacionesGetByDisponibilidadHotel.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ habitacionesGetByDisponibilidadHotel }}</code></pre>
+                        <pre  style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ habitacionesGetByDisponibilidadHotel }}</code></pre>
                     </div>
 
 
@@ -1289,8 +1270,7 @@
                                 </li>
                             </ul>
                             <p><strong>Resultado de ejemplo de consulta:</strong></p>
-                            <pre v-if="hoteles.length"
-                                style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ hoteles }}</code></pre>
+                            <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ hoteles }}</code></pre>
                         </div>
                     </div>
 
@@ -1313,8 +1293,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/hoteles/getByCiudad/Estambul</code>
                         </p>
-                        <pre v-if="hotelesGetByCiudad.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ hotelesGetByCiudad }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ hotelesGetByCiudad }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -1342,8 +1321,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/hoteles/getByTipoCategoria/Resort/5</code>
                         </p>
-                        <pre v-if="hotelesGetByTipoCategoria.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ hotelesGetByTipoCategoria }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ hotelesGetByTipoCategoria }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -1365,8 +1343,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/hoteles/getByAmenidades/delectus</code>
                         </p>
-                        <pre v-if="hotelesGetByAmenidades.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ hotelesGetByAmenidades }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ hotelesGetByAmenidades }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -1398,8 +1375,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/hoteles/getByRangoHoraCheck/1/09:00:00/11:00:00</code>
                         </p>
-                        <pre v-if="hotelesGetByRangoHoraCheck.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ hotelesGetByRangoHoraCheck }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ hotelesGetByRangoHoraCheck }}</code></pre>
                     </div>
 
 
@@ -1493,8 +1469,7 @@
                                 </li>
                             </ul>
                             <p><strong>Resultado de ejemplo de consulta:</strong></p>
-                            <pre v-if="reservaciones.length"
-                                style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ reservaciones }}</code></pre>
+                            <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ reservaciones }}</code></pre>
                         </div>
                     </div>
 
@@ -1517,8 +1492,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/reservaciones/getByEstatus/Cancelada</code>
                         </p>
-                        <pre v-if="reservacionesGetByEstatus.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ reservacionesGetByEstatus }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ reservacionesGetByEstatus }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -1545,8 +1519,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/reservaciones/getByRangoFechasEstadia/2003-01-01/2010-12-12</code>
                         </p>
-                        <pre v-if="reservacionesGetByRangoFechasEstadia.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ reservacionesGetByRangoFechasEstadia }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ reservacionesGetByRangoFechasEstadia }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -1568,8 +1541,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/reservaciones/getByCliente/Zoé</code>
                         </p>
-                        <pre v-if="reservacionesGetByCliente.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ reservacionesGetByCliente }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ reservacionesGetByCliente }}</code></pre>
                     </div>
 
                     <div class="separator_empty"></div>
@@ -1591,8 +1563,7 @@
                         <p>
                             <code>https://sailfish-master-goose.ngrok-free.app/reservaciones/getByTipoHabitacion/Individual</code>
                         </p>
-                        <pre v-if="reservacionesGetByTipoHabitacion.length"
-                            style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ reservacionesGetByTipoHabitacion }}</code></pre>
+                        <pre style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ reservacionesGetByTipoHabitacion }}</code></pre>
                     </div>
                 </div>
             </div>

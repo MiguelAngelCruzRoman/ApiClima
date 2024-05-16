@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "cf358040-2c93-47d2-9726-1fda8041b2e0",
+		"name": "facturas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33509521",
+		"_collection_link": "https://www.postman.com/yomerengues8/workspace/api-hotel-codeigniter/collection/33509521-cf358040-2c93-47d2-9726-1fda8041b2e0?action=share&source=collection_link&creator=33509521"
+	},
+	"item": [
+		{
+			"name": "facturas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/facturas",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"facturas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByMetodoPago",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/facturas/getByMetodoPago/Tarjeta de crédito",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"facturas",
+						"getByMetodoPago",
+						"Tarjeta de crédito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByRangoFechasEmision",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/facturas/getByRangoFechasEmision/2023-01-01/2024-12-12",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"facturas",
+						"getByRangoFechasEmision",
+						"2023-01-01",
+						"2024-12-12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByEstatusProximoVencimiento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/facturas/getByEstatusProximoVencimiento/Pagada",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"facturas",
+						"getByEstatusProximoVencimiento",
+						"Pagada"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByFechaReservacion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/facturas/getByFechaReservacion/2021-07-25",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"facturas",
+						"getByFechaReservacion",
+						"2021-07-25"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

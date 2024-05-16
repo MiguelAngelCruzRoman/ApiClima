@@ -1,0 +1,161 @@
+CRITICAL - 2024-05-15 15:13:32 --> No suitable servers found (`serverSelectionTryOnce` set): [TLS handshake failed: error:0A000438:SSL routines::tlsv1 alert internal error calling hello on 'ac-fyllg3z-shard-00-02.eit2hnw.mongodb.net:27017'] [TLS handshake failed: error:0A000438:SSL routines::tlsv1 alert internal error calling hello on 'ac-fyllg3z-shard-00-00.eit2hnw.mongodb.net:27017'] [TLS handshake failed: error:0A000438:SSL routines::tlsv1 alert internal error calling hello on 'ac-fyllg3z-shard-00-01.eit2hnw.mongodb.net:27017']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 598.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(598): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(646): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\ReservacionesModel.php(67): MongoDB\Collection->find([...])
+ 4 APPPATH\Controllers\Reservaciones.php(64): App\Models\ReservacionesModel->getByTipoHabitacion('Individual')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByTipoHabitacion('Individual')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-15 15:15:23 --> No suitable servers found (`serverSelectionTryOnce` set): [TLS handshake failed: error:0A000438:SSL routines::tlsv1 alert internal error calling hello on 'ac-fyllg3z-shard-00-02.eit2hnw.mongodb.net:27017'] [TLS handshake failed: error:0A000438:SSL routines::tlsv1 alert internal error calling hello on 'ac-fyllg3z-shard-00-00.eit2hnw.mongodb.net:27017'] [TLS handshake failed: error:0A000438:SSL routines::tlsv1 alert internal error calling hello on 'ac-fyllg3z-shard-00-01.eit2hnw.mongodb.net:27017']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 598.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(598): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(646): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\ReservacionesModel.php(67): MongoDB\Collection->find([...])
+ 4 APPPATH\Controllers\Reservaciones.php(64): App\Models\ReservacionesModel->getByTipoHabitacion('Individual')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Reservaciones->getByTipoHabitacion('Individual')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservaciones))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-15 16:58:10 --> Too few arguments to function CodeIgniter\HTTP\Message::setHeader(), 1 passed in C:\Users\ardil\Downloads\TopicosBD2024_Proyectos\ProyectoFinal\API_Hoteles_CodeIgniter\app\Controllers\Clientes.php on line 21 and exactly 2 expected
+in SYSTEMPATH\HTTP\MessageTrait.php on line 141.
+ 1 APPPATH\Controllers\Clientes.php(21): CodeIgniter\HTTP\Message->setHeader('"Content-Type": "application/json", "ngrok-skip-browser-warning": "true"')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-15 16:58:17 --> Too few arguments to function CodeIgniter\HTTP\Message::setHeader(), 1 passed in C:\Users\ardil\Downloads\TopicosBD2024_Proyectos\ProyectoFinal\API_Hoteles_CodeIgniter\app\Controllers\Clientes.php on line 21 and exactly 2 expected
+in SYSTEMPATH\HTTP\MessageTrait.php on line 141.
+ 1 APPPATH\Controllers\Clientes.php(21): CodeIgniter\HTTP\Message->setHeader('"Content-Type": "application/json", "ngrok-skip-browser-warning": "true"')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-15 17:38:51 --> Undefined variable $allClientes
+in APPPATH\Controllers\Clientes.php on line 23.
+ 1 APPPATH\Controllers\Clientes.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $allClientes', 'C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\app\\Controllers\\Clientes.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-15 20:20:46 --> Class "GuzzleHttp\Client" not found
+in APPPATH\Controllers\Clientes.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->documentacionIndex()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-15 20:29:54 --> cURL error 52: Empty reply from server (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://sailfish-master-goose.ngrok-free.app/clientes
+in VENDORPATH\guzzlehttp\guzzle\src\Handler\CurlFactory.php on line 210.
+ 1 VENDORPATH\guzzlehttp\guzzle\src\Handler\CurlFactory.php(158): GuzzleHttp\Handler\CurlFactory::createRejection(Object(GuzzleHttp\Handler\EasyHandle), [...])
+ 2 VENDORPATH\guzzlehttp\guzzle\src\Handler\CurlFactory.php(110): GuzzleHttp\Handler\CurlFactory::finishError(Object(GuzzleHttp\Handler\CurlHandler), Object(GuzzleHttp\Handler\EasyHandle), Object(GuzzleHttp\Handler\CurlFactory))
+ 3 VENDORPATH\guzzlehttp\guzzle\src\Handler\CurlHandler.php(47): GuzzleHttp\Handler\CurlFactory::finish(Object(GuzzleHttp\Handler\CurlHandler), Object(GuzzleHttp\Handler\EasyHandle), Object(GuzzleHttp\Handler\CurlFactory))
+ 4 VENDORPATH\guzzlehttp\guzzle\src\Handler\Proxy.php(28): GuzzleHttp\Handler\CurlHandler->__invoke(Object(GuzzleHttp\Psr7\Request), [...])
+ 5 VENDORPATH\guzzlehttp\guzzle\src\Handler\Proxy.php(48): GuzzleHttp\Handler\Proxy::GuzzleHttp\Handler\{closure}(Object(GuzzleHttp\Psr7\Request), [...])
+ 6 VENDORPATH\guzzlehttp\guzzle\src\PrepareBodyMiddleware.php(35): GuzzleHttp\Handler\Proxy::GuzzleHttp\Handler\{closure}(Object(GuzzleHttp\Psr7\Request), [...])
+ 7 VENDORPATH\guzzlehttp\guzzle\src\Middleware.php(31): GuzzleHttp\PrepareBodyMiddleware->__invoke(Object(GuzzleHttp\Psr7\Request), [...])
+ 8 VENDORPATH\guzzlehttp\guzzle\src\RedirectMiddleware.php(71): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Request), [...])
+ 9 VENDORPATH\guzzlehttp\guzzle\src\Middleware.php(66): GuzzleHttp\RedirectMiddleware->__invoke(Object(GuzzleHttp\Psr7\Request), [...])
+10 VENDORPATH\guzzlehttp\guzzle\src\HandlerStack.php(75): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Request), [...])
+11 VENDORPATH\guzzlehttp\guzzle\src\Client.php(333): GuzzleHttp\HandlerStack->__invoke(Object(GuzzleHttp\Psr7\Request), [...])
+12 VENDORPATH\guzzlehttp\guzzle\src\Client.php(169): GuzzleHttp\Client->transfer(Object(GuzzleHttp\Psr7\Request), [...])
+13 VENDORPATH\guzzlehttp\guzzle\src\Client.php(189): GuzzleHttp\Client->requestAsync('GET', Object(GuzzleHttp\Psr7\Uri), [...])
+14 VENDORPATH\guzzlehttp\guzzle\src\ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://sailfish-master-goose.ngrok-free.app/clientes', [...])
+15 APPPATH\Controllers\Clientes.php(37): GuzzleHttp\Client->get('https://sailfish-master-goose.ngrok-free.app/clientes')
+16 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->documentacionIndex()
+17 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+18 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-15 20:31:21 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH\guzzlehttp\guzzle\src\Handler\CurlFactory.php on line 595.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-15 20:32:05 --> cURL error 52: Empty reply from server (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://sailfish-master-goose.ngrok-free.app/clientes
+in VENDORPATH\guzzlehttp\guzzle\src\Handler\CurlFactory.php on line 210.
+ 1 VENDORPATH\guzzlehttp\guzzle\src\Handler\CurlFactory.php(158): GuzzleHttp\Handler\CurlFactory::createRejection(Object(GuzzleHttp\Handler\EasyHandle), [...])
+ 2 VENDORPATH\guzzlehttp\guzzle\src\Handler\CurlFactory.php(110): GuzzleHttp\Handler\CurlFactory::finishError(Object(GuzzleHttp\Handler\CurlHandler), Object(GuzzleHttp\Handler\EasyHandle), Object(GuzzleHttp\Handler\CurlFactory))
+ 3 VENDORPATH\guzzlehttp\guzzle\src\Handler\CurlHandler.php(47): GuzzleHttp\Handler\CurlFactory::finish(Object(GuzzleHttp\Handler\CurlHandler), Object(GuzzleHttp\Handler\EasyHandle), Object(GuzzleHttp\Handler\CurlFactory))
+ 4 VENDORPATH\guzzlehttp\guzzle\src\Handler\Proxy.php(28): GuzzleHttp\Handler\CurlHandler->__invoke(Object(GuzzleHttp\Psr7\Request), [...])
+ 5 VENDORPATH\guzzlehttp\guzzle\src\Handler\Proxy.php(48): GuzzleHttp\Handler\Proxy::GuzzleHttp\Handler\{closure}(Object(GuzzleHttp\Psr7\Request), [...])
+ 6 VENDORPATH\guzzlehttp\guzzle\src\PrepareBodyMiddleware.php(35): GuzzleHttp\Handler\Proxy::GuzzleHttp\Handler\{closure}(Object(GuzzleHttp\Psr7\Request), [...])
+ 7 VENDORPATH\guzzlehttp\guzzle\src\Middleware.php(31): GuzzleHttp\PrepareBodyMiddleware->__invoke(Object(GuzzleHttp\Psr7\Request), [...])
+ 8 VENDORPATH\guzzlehttp\guzzle\src\RedirectMiddleware.php(71): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Request), [...])
+ 9 VENDORPATH\guzzlehttp\guzzle\src\Middleware.php(66): GuzzleHttp\RedirectMiddleware->__invoke(Object(GuzzleHttp\Psr7\Request), [...])
+10 VENDORPATH\guzzlehttp\guzzle\src\HandlerStack.php(75): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Request), [...])
+11 VENDORPATH\guzzlehttp\guzzle\src\Client.php(333): GuzzleHttp\HandlerStack->__invoke(Object(GuzzleHttp\Psr7\Request), [...])
+12 VENDORPATH\guzzlehttp\guzzle\src\Client.php(169): GuzzleHttp\Client->transfer(Object(GuzzleHttp\Psr7\Request), [...])
+13 VENDORPATH\guzzlehttp\guzzle\src\Client.php(189): GuzzleHttp\Client->requestAsync('GET', Object(GuzzleHttp\Psr7\Uri), [...])
+14 VENDORPATH\guzzlehttp\guzzle\src\ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://sailfish-master-goose.ngrok-free.app/clientes', [...])
+15 APPPATH\Controllers\Clientes.php(37): GuzzleHttp\Client->get('https://sailfish-master-goose.ngrok-free.app/clientes')
+16 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->documentacionIndex()
+17 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+18 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-15 21:27:45 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH\guzzlehttp\guzzle\src\Handler\CurlFactory.php on line 595.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-15 21:30:57 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH\guzzlehttp\guzzle\src\Handler\CurlFactory.php on line 595.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-15 21:37:43 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH\guzzlehttp\guzzle\src\Handler\CurlFactory.php on line 595.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-15 21:42:34 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH\guzzlehttp\guzzle\src\Handler\CurlFactory.php on line 595.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-15 21:43:50 --> Server error: `GET https://sailfish-master-goose.ngrok-free.app/clientes` resulted in a `503 Service Unavailable` response:
+ngrok gateway error
+The server returned an invalid or incomplete HTTP response.
+
+ERR_NGROK_3004
+
+
+in VENDORPATH\guzzlehttp\guzzle\src\Exception\RequestException.php on line 113.
+ 1 VENDORPATH\guzzlehttp\guzzle\src\Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), null, [], null)
+ 2 VENDORPATH\guzzlehttp\promises\src\Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+ 3 VENDORPATH\guzzlehttp\promises\src\Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), null)
+ 4 VENDORPATH\guzzlehttp\promises\src\TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+ 5 VENDORPATH\guzzlehttp\promises\src\Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+ 6 VENDORPATH\guzzlehttp\promises\src\Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+ 7 VENDORPATH\guzzlehttp\promises\src\Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+ 8 VENDORPATH\guzzlehttp\promises\src\Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+ 9 VENDORPATH\guzzlehttp\promises\src\Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+10 VENDORPATH\guzzlehttp\guzzle\src\Client.php(189): GuzzleHttp\Promise\Promise->wait()
+11 VENDORPATH\guzzlehttp\guzzle\src\ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://sailfish-master-goose.ngrok-free.app/clientes', [...])
+12 APPPATH\Controllers\Clientes.php(37): GuzzleHttp\Client->get('https://sailfish-master-goose.ngrok-free.app/clientes')
+13 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->documentacionIndex()
+14 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+15 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-15 21:59:28 --> Undefined property: App\Controllers\Clientes::$load
+in APPPATH\Controllers\Clientes.php on line 44.
+ 1 APPPATH\Controllers\Clientes.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Clientes::$load', 'C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\app\\Controllers\\Clientes.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->documentacionIndex()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-15 22:03:55 --> view(): Argument #2 ($data) must be of type array, stdClass given, called in C:\Users\ardil\Downloads\TopicosBD2024_Proyectos\ProyectoFinal\API_Hoteles_CodeIgniter\app\Controllers\Clientes.php on line 44
+in SYSTEMPATH\Common.php on line 1176.
+ 1 APPPATH\Controllers\Clientes.php(44): view('clientes/index', Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->documentacionIndex()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-15 22:07:24 --> Undefined array key "clientes "
+in APPPATH\Controllers\Clientes.php on line 44.
+ 1 APPPATH\Controllers\Clientes.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "clientes "', 'C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\app\\Controllers\\Clientes.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->documentacionIndex()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')

@@ -15,9 +15,13 @@ class Comentarios extends BaseController
         $comentarios = new ComentariosModel();
         $allComentarios = $comentarios->index();
 
+        $content = [
+            'datos' => $allComentarios,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allComentarios);
+        $response->setJSON($content);
         return $response;
     }
     public function documentacionIndex()
@@ -30,9 +34,13 @@ class Comentarios extends BaseController
         $comentarios = new ComentariosModel();
         $allComentarios = $comentarios->getByCalificacion($calificacion);
 
+        $content = [
+            'datos' => $allComentarios,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allComentarios);
+        $response->setJSON($content);
         return $response;
     }
 
@@ -42,9 +50,13 @@ class Comentarios extends BaseController
         $comentarios = new ComentariosModel();
         $allComentarios = $comentarios->getByCliente($nombreCliente);
 
+        $content = [
+            'datos' => $allComentarios,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allComentarios);
+        $response->setJSON($content);
         return $response;
     }
 
@@ -53,9 +65,13 @@ class Comentarios extends BaseController
         $comentarios = new ComentariosModel();
         $allComentarios = $comentarios->getByRangoFechas($fechaInicio, $fechaFin);
 
+        $content = [
+            'datos' => $allComentarios,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allComentarios);
+        $response->setJSON($content);
         return $response;
     }
 
@@ -64,9 +80,13 @@ class Comentarios extends BaseController
         $comentarios = new ComentariosModel();
         $allComentarios = $comentarios->getByHotelCalificacion($nombreHotel, $calificacion);
 
+        $content = [
+            'datos' => $allComentarios,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allComentarios);
+        $response->setJSON($content);
         return $response;
     }
 }

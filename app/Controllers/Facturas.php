@@ -15,9 +15,13 @@ class Facturas extends BaseController
         $facturas = new FacturasModel();
         $allFacturas = $facturas->index();
 
+        $content = [
+            'datos' => $allFacturas,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allFacturas);
+        $response->setJSON($content);
         return $response;
     }
     public function documentacionIndex()
@@ -30,9 +34,13 @@ class Facturas extends BaseController
         $facturas = new FacturasModel();
         $allFacturas = $facturas->getByMetodoPago($metodoPago);
 
+        $content = [
+            'datos' => $allFacturas,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allFacturas);
+        $response->setJSON($content);
         return $response;
     }
 
@@ -41,9 +49,13 @@ class Facturas extends BaseController
         $facturas = new FacturasModel();
         $allFacturas = $facturas->getByRangoFechasEmision($fechaInicio, $fechaFin);
 
+        $content = [
+            'datos' => $allFacturas,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allFacturas);
+        $response->setJSON($content);
         return $response;
     }
 
@@ -52,9 +64,13 @@ class Facturas extends BaseController
         $facturas = new FacturasModel();
         $allFacturas = $facturas->getByEstatusProximoVencimiento($estatus);
 
+        $content = [
+            'datos' => $allFacturas,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allFacturas);
+        $response->setJSON($content);
         return $response;
     }
 
@@ -63,9 +79,13 @@ class Facturas extends BaseController
         $facturas = new FacturasModel();
         $allFacturas = $facturas->getByFechaReservacion($fecha);
 
+        $content = [
+            'datos' => $allFacturas,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allFacturas);
+        $response->setJSON($content);
         return $response;
     }
 }

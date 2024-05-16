@@ -15,9 +15,13 @@ class Hoteles extends BaseController
         $hoteles = new HotelesModel();
         $allHoteles = $hoteles->index();
 
+        $content = [
+            'datos' => $allHoteles,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allHoteles);
+        $response->setJSON($content);
         return $response;
     }
     public function documentacionIndex()
@@ -29,10 +33,13 @@ class Hoteles extends BaseController
     {
         $hoteles = new HotelesModel();
         $allHoteles = $hoteles->getByCiudad($ciudad);
+ $content = [
+            'datos' => $allHoteles,
+        ];
 
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allHoteles);
+        $response->setJSON($content);
         return $response;
     }
 
@@ -41,9 +48,13 @@ class Hoteles extends BaseController
         $hoteles = new HotelesModel();
         $allHoteles = $hoteles->getByTipoCategoria($tipo, $categoria);
 
+        $content = [
+            'datos' => $allHoteles,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allHoteles);
+        $response->setJSON($content);
         return $response;
     }
 
@@ -52,9 +63,13 @@ class Hoteles extends BaseController
         $hoteles = new HotelesModel();
         $allHoteles = $hoteles->getByAmenidades($servicios);
 
+        $content = [
+            'datos' => $allHoteles,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allHoteles);
+        $response->setJSON($content);
         return $response;
     }
 
@@ -63,9 +78,13 @@ class Hoteles extends BaseController
         $hoteles = new HotelesModel();
         $allHoteles = $hoteles->getByRangoHoraCheck($tipo, $horaInicio, $horaFin);
 
+        $content = [
+            'datos' => $allHoteles,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allHoteles);
+        $response->setJSON($content);
         return $response;
     }
 }

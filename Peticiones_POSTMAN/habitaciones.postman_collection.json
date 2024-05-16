@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "21f4fe65-5e6d-480b-bf00-1de0214efc60",
+		"name": "habitaciones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33509521",
+		"_collection_link": "https://www.postman.com/yomerengues8/workspace/api-hotel-codeigniter/collection/33509521-21f4fe65-5e6d-480b-bf00-1de0214efc60?action=share&source=collection_link&creator=33509521"
+	},
+	"item": [
+		{
+			"name": "habitaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/habitaciones",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"habitaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByPrecio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/habitaciones/getByPrecio/2544",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"habitaciones",
+						"getByPrecio",
+						"2544"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByServiciosExactos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/habitaciones/getByServiciosExactos/dolor,neque",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"habitaciones",
+						"getByServiciosExactos",
+						"dolor,neque"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByServiciosSimilares",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/habitaciones/getByServiciosSimilares/dolor,neque",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"habitaciones",
+						"getByServiciosSimilares",
+						"dolor,neque"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByDisponibilidad",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/habitaciones/getByDisponibilidadHotel/1/Melgar-G%C3%A1lvez%20S.A.%20de%20C.V.",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"habitaciones",
+						"getByDisponibilidadHotel",
+						"1",
+						"Melgar-G%C3%A1lvez%20S.A.%20de%20C.V."
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -77,12 +77,11 @@
                 <h2 v-else>Prueba buscando "clientes":</h2>
                 <br>
 
-                <pre v-if="elementos.length"
+                <pre 
                     style="max-width: 80%; overflow-x: auto; height: 300px; margin: 0 auto; border: 1px solid black; background-color: #ccc;"><code>{{ formattedElementos }}</code></pre>
-                <h5 v-else align="center">No se encontraron resultados para "{{ruta}}". Intente con otra ruta</h5>
 
                 <center>
-                    <a v-if="elementos.length" :href="ruta" target="_blank" class="btn btn-primary">Ver JSON</a>
+                    <a :href="ruta" target="_blank" class="btn btn-primary">Ver JSON</a>
                 </center>
             </div>
         </div>

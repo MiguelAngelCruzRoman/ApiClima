@@ -15,9 +15,13 @@ class Habitaciones extends BaseController
         $habitaciones = new HabitacionesModel();
         $allHabitaciones = $habitaciones->index();
 
+        $content = [
+            'datos' => $allHabitaciones,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allHabitaciones);
+        $response->setJSON($content);
         return $response;
     }
     public function documentacionIndex()
@@ -30,9 +34,13 @@ class Habitaciones extends BaseController
         $habitaciones = new HabitacionesModel();
         $allHabitaciones = $habitaciones->getByPrecio($precio);
 
+        $content = [
+            'datos' => $allHabitaciones,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allHabitaciones);
+        $response->setJSON($content);
         return $response;
     }
 
@@ -41,9 +49,13 @@ class Habitaciones extends BaseController
         $habitaciones = new HabitacionesModel();
         $allHabitaciones = $habitaciones->getByServiciosExactos($servicios);
 
+        $content = [
+            'datos' => $allHabitaciones,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allHabitaciones);
+        $response->setJSON($content);
         return $response;
     }
 
@@ -52,9 +64,13 @@ class Habitaciones extends BaseController
         $habitaciones = new HabitacionesModel();
         $allHabitaciones = $habitaciones->getByServiciosSimilares($servicios);
 
+        $content = [
+            'datos' => $allHabitaciones,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allHabitaciones);
+        $response->setJSON($content);
         return $response;
     }
 
@@ -63,9 +79,13 @@ class Habitaciones extends BaseController
         $habitaciones = new HabitacionesModel();
         $allHabitaciones = $habitaciones->getByDisponibilidadHotel($disponibilidad, $nombreHotel);
 
+        $content = [
+            'datos' => $allHabitaciones,
+        ];
+
         $response = service('response');
         $response->setStatusCode(Response::HTTP_OK);
-        $response->setJSON($allHabitaciones);
+        $response->setJSON($content);
         return $response;
     }
 }

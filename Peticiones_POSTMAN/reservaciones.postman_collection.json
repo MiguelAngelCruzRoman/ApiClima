@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "b5ab1d1f-a080-45cf-8d8b-b483afece084",
+		"name": "reservaciones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33509521",
+		"_collection_link": "https://www.postman.com/yomerengues8/workspace/api-hotel-codeigniter/collection/33509521-b5ab1d1f-a080-45cf-8d8b-b483afece084?action=share&source=collection_link&creator=33509521"
+	},
+	"item": [
+		{
+			"name": "reservaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/reservaciones",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"reservaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByEstatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/reservaciones/getByEstatus/Cancelada",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"reservaciones",
+						"getByEstatus",
+						"Cancelada"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByRangoFechasEstadia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/reservaciones/getByRangoFechasEstadia/2003-01-01/2010-12-12",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"reservaciones",
+						"getByRangoFechasEstadia",
+						"2003-01-01",
+						"2010-12-12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByCliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/reservaciones/getByCliente/Zoé",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"reservaciones",
+						"getByCliente",
+						"Zoé"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByTipoHabitacion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sailfish-master-goose.ngrok-free.app/reservaciones/getByTipoHabitacion/Individual",
+					"protocol": "https",
+					"host": [
+						"sailfish-master-goose",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"reservaciones",
+						"getByTipoHabitacion",
+						"Individual"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
